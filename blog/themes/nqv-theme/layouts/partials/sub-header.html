@@ -1,0 +1,11 @@
+<header class="header">
+  <h1 class="header__title">{{ .Title }}</h1>
+  <nav>
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+      <li>{{ with .Site.GetPage "section" "article" }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end}}</li>
+    </ul>
+  </nav>
+</header>
+
+    

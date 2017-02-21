@@ -1,15 +1,19 @@
 {{ partial "header.html" . }}
-		<h2>Articles</h2>
-		{{- range first 10 .Data.Pages -}}
-			{{- if eq .Type "article" }}
-				<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-			{{- end -}}
-		{{- end }}
-		<h2>Pages</h2>
-		{{- range first 10 .Data.Pages -}}
-			{{- if eq .Type "page" }}
-				<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-			{{- end -}}
-		{{- end }}
-	</body>
-</html>
+{{ partial "sub-header.html" . }}
+<h2>Articles</h2>
+{{- range first 10 .Data.Pages -}}
+{{- if eq .Type "article" }}
+<div class="article-summary">
+  <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+  <h5>{{ .Params.author }}</h5>
+  <p>{{ .Summary }}</p>
+</div>
+{{- end -}}
+{{- end }}
+<h2>Pages</h2>
+{{- range first 10 .Data.Pages -}}
+{{- if eq .Type "page" }}
+<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+{{- end -}}
+{{- end }}
+{{ partial "footer.html" . }}
