@@ -7,7 +7,7 @@ author: "Vicki & Andrew"
 
 ![Camping at the beach. not quite romantic](/img/20170129_085202_HDR.jpg)
 
-After deciding to quit our job and go travel, the first thing that needed to be done is go camping…because I have never been camping. I picked out a campground close to Seattle -  Fay Bainbridge Park (4 miles biking - 30 min ferry - 6 miles biking  from home - PIECE OF cake! For me at least, Andrew was carrying everything with the BOB trailer. I also insist on bring the 6 bottles of beer in a beer carrier hat wasn't meant for road bikes.) 
+After deciding to quit our job and go travel, the first thing that needed to be done is go camping…because I have never been camping. I picked out a campground close to Seattle -  Fay Bainbridge Park (4 miles biking - 30 min ferry - 6 miles biking  from home - PIECE OF cake! For me at least, Andrew was carrying everything with the BOB trailer. I also insist on bringing the 6 bottles of beer in a beer carrier hat wasn't meant for road bikes.) 
 
 We arrived kind of late. It was dark. 
 
