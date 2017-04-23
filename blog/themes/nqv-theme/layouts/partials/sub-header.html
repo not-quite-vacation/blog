@@ -1,9 +1,9 @@
 <header class="header">
-  <h1 class="header__title">{{ .Title }}</h1>
+  <h1 class="header-title">{{ .Title }}</h1>
   <nav>
     <ul>
-      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-      <li>{{ with .Site.GetPage "section" "article" }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end}}</li>
+      <li><div class="icon"></div><div><a href="{{ .Site.BaseURL }}">Home</a><div></li>
+      <li><div class="icon"></div><div>{{ with .Site.GetPage "section" "article" }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end}}</div></li>
     </ul>
   </nav>
 </header>

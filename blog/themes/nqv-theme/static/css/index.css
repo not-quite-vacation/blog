@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1 {
+    background: #B5F7FF;
+}
+h2 {
+    line-height: 72px;
+    margin:0px;
+    padding: 0px 16px;
+}
+.header-title {
+    font-size: 40px;
+    margin: 0;
+    padding: 0px 16px;
+    line-height: 72px;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    padding: 0px 16px 0px 16px;
+    list-style: none;
+    height: 71px;
+    border-bottom: 1px solid #1a4e99;
+}
+
+nav > ul > li > div.icon {
+    border-radius: 40px;
+    width:40px;
+    height: 40px;
+    background: red;
+    position: relative;
+    top: 8px;
+}
+
+nav > ul > li > div {
+    display: inline-block;
+}
+
+nav > ul > li > div > a {
+    margin-left: 16px;
+    font-size: 24pt;
+    line-height: 72px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #1a4e99;
+}
+
+.post-summary {
+    margin: 0px 16px 16px 16px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
+    max-width: 600px;
+}
+
+.post-summary-header {
+    margin: 0;
+    padding: 24px 0px 0px 0px;
+}
+
+.post-summary-header .title {
+    padding: 0px 16px;
+    font-size: 20px;
+    margin: 0px;
+    line-height: 32px;
+}
+
+.post-summary-header .author {
+    padding: 0px 16px;
+    font-size: 16px;
+    margin: 0px;
+    line-height: 24px;
+}
+
+.post-summary-body {
+    margin: 16px;
+}

@@ -5,8 +5,7 @@ author = "Andrew O'Neill"
 
 +++
 
-The second one was so much easier than the first.
-<!--more-->
+The second one was so much easier than the first.<!--more-->
 
 I am a pro now.
 
