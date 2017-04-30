@@ -13,14 +13,10 @@ html, body {
     color: #444;
 }
 
-html {
-    overflow: hidden;
-}
-
 body {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
@@ -40,26 +36,49 @@ body {
     justify-content: flex-start;
     align-items: stretch;
     align-content: center; }
-    .header .headerButton {
-        width: 24px;
-        height: 24px;
-        margin-right: 16px;
-        text-indent: -30000px;
-        overflow: hidden;
-        opacity: 0.54;
-        border: none;
-        outline: none;
-        cursor: pointer; }
-    .header #butRefresh {
-        background: url(/img/refresh.svg) center center no-repeat; }
-    .header #butAdd {
-        background: url(/img/add.svg) center center no-repeat; }
-
 
 .main {
-    flex: 1;
-    overflow-x: hidden;
-    overflow-y: auto;
+    width: 100%;
+}
+
+.main article img {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+}
+
+@media(min-width: 600px) {
+    body {
+        font-size: 24px;
+    }
+    .main {
+        font-size: 24px;
+    }
+}
+
+@media(min-width: 800px) {
+    .main {
+        padding-top: 60px;
+        width: 600px;
+        margin-right: auto;
+        overflow: initial;
+        font-size: 24px;
+    }
+    .nav {
+        width: 200px;
+        margin-left: auto;
+    }
+    body {
+        font-size: 24px;
+    }
+}
+
+.main p img {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h2 {
@@ -86,7 +105,7 @@ h2 {
     align-items: stretch;
     align-content: center;
     height: 56px;
-    border-bottom: 1px solid #1a4e99;
+    /*border-bottom: 1px solid #1a4e99;*/
 }
 
 .nav .navItem .icon {

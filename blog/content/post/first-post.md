@@ -3,6 +3,7 @@ date: "2017-02-02T18:56:40-08:00"
 title: "Not Quite Camping"
 draft: true
 author: "Vicki & Andrew"
+featured_image: "/img/20170129_085202_HDR.jpg"
 ---
 
 ![Camping at the beach. not quite romantic](/img/20170129_085202_HDR.jpg)

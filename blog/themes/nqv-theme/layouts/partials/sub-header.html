@@ -1,10 +1,9 @@
 <header class="header">
   <h1 class="header-title">{{ .Title }}</h1>
-  <button id="butRefresh" class="headerButton"></button>
-  <button id="butAdd" class="headerButton"></button>
 </header>
 <nav class="nav">
-  <div class="navItem"><button class="icon"></button><a href="{{ .Site.BaseURL }}">Home</a></div>
-  <div class="navItem"><button class="icon"></button>{{ with .Site.GetPage "section" "article" }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end}}</div>
+  <ul>
+    <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+  {{ with .Site.GetPage "section" "post" }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end}}
 </nav>
 <main class="main">
