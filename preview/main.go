@@ -28,7 +28,7 @@ func main() {
 
 	m := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
-		HostPolicy: autocert.HostWhitelist("notquitetravel.com"),
+		HostPolicy: autocert.HostWhitelist("notquitevacation.com", "www.notquitevacation.com"),
 	}
 	tlsConfig := &tls.Config{
 		PreferServerCipherSuites: true,
