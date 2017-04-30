@@ -3,8 +3,8 @@ description = ""
 images = ["/img/andrew_cherry.png"]
 date = "2017-04-22T12:27:37-07:00"
 title = "Millions of Flowers"
-draft = true
-
+author = "Vicki"
+featured_image = "/img/tulip2.JPG"
 +++
 Time is flying...minue the at work part :P. This post will be about the beautiful flowers from Japan and Holland! 
 
