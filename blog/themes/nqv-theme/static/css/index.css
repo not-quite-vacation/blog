@@ -29,7 +29,6 @@ body {
     position: fixed;
     background: #b5f7ff;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-    padding: 16px 16px 0 16px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -48,6 +47,21 @@ body {
 
 .nav {
     width: 100%;
+}
+
+body > .header {
+    width: 100%;
+    background-image: url("/img/test_title.png")
+}
+
+body > header > h1 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 16px 16px 0 16px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 @media(min-width: 600px) {
