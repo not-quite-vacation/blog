@@ -1,9 +1,7 @@
 package main
 
 import (
-	"crypto/tls"
 	"log"
-	"net"
 	"net/http"
 	"not-quite-vacation/blog"
 	"time"
@@ -26,35 +24,39 @@ func main() {
 	mux := http.NewServeMux()
 	mux.Handle("/", http.FileServer(blog.FS(false)))
 
-	m := autocert.Manager{
-		Prompt:     autocert.AcceptTOS,
-		HostPolicy: autocert.HostWhitelist("notquitevacation.com", "www.notquitevacation.com"),
-	}
-	tlsConfig := &tls.Config{
-		PreferServerCipherSuites: true,
-		CurvePreferences: []tls.CurveID{
-			tls.CurveP256,
-			tls.X25519,
-		},
-		GetCertificate: m.GetCertificate,
-	}
+	/*
+		m := autocert.Manager{
+			Prompt:     autocert.AcceptTOS,
+			HostPolicy: autocert.HostWhitelist("notquitevacation.com"),
+		}
+		tlsConfig := &tls.Config{
+			PreferServerCipherSuites: true,
+			CurvePreferences: []tls.CurveID{
+				tls.CurveP256,
+				tls.X25519,
+			},
+			GetCertificate: m.GetCertificate,
+		}
 
-	srv := http.Server{
-		Handler:      mux,
-		ReadTimeout:  5 * time.Second,
-		WriteTimeout: 5 * time.Second,
-		IdleTimeout:  2 * time.Minute,
-		TLSConfig:    tlsConfig,
-	}
+		srv := http.Server{
+			Handler:      mux,
+			ReadTimeout:  5 * time.Second,
+			WriteTimeout: 5 * time.Second,
+			IdleTimeout:  2 * time.Minute,
+			TLSConfig:    tlsConfig,
+		}
 
-	lis, err := net.Listen("tcp", ":https")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer lis.Close()
+		lis, err := net.Listen("tcp", ":https")
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer lis.Close()
 
-	err = srv.Serve(lis)
-	if err != nil {
-		log.Fatal(err)
-	}
+		err = srv.Serve(lis)
+		if err != nil {
+			log.Fatal(err)
+		}
+	*/
+
+	log.Fatal(http.Serve(autocert.NewListener("www.notquitevacation.com"), mux))
 }

@@ -1,5 +1,5 @@
 languageCode = "en-us"
 title = "Not Quite Vacation"
-baseURL = "http://www.notquitevacation/"
+baseURL = "https://www.notquitevacation.com/"
 theme = "nqv-theme"
 disqusShortname = "notquitevacation"
