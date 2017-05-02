@@ -1,4 +1,7 @@
-FROM ubuntu:16.04
-RUN apt-get update -y && apt-get install -y curl 
-COPY preview /bin/preview
-ENTRYPOINT ["/bin/preview"]
+FROM golang:alpine
+ARG pkg=not-quite-vacation/preview
+RUN apk add --no-cache ca-certificates
+COPY . $GOPATH/src/$pkg
+WORKDIR $GOPATH/src/$pkg
+RUN go install 
+ENTRYPOINT ["preview"]
