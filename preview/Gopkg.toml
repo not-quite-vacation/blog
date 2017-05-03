@@ -56,7 +56,7 @@
   name = "cloud.google.com/go"
 
 [[dependencies]]
-  branch = "go-server"
+  branch = "master"
   name = "github.com/not-quite-vacation/blog"
 
 [[dependencies]]
