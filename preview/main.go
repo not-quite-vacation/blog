@@ -10,12 +10,14 @@ import (
 
 	"github.com/not-quite-vacation/blog/blog"
 
+	"golang.org/x/crypto/acme"
 	"golang.org/x/crypto/acme/autocert"
 )
 
 var (
 	bucketName  = flag.String("bucket_name", "notquitevacation", "the google cloud store bucket to use.")
 	projectName = flag.String("project_name", "notquitevacation", "the google cloud project.")
+	useStaging  = flag.Bool("staging", false, "use the staging let's encrypt directory.")
 )
 
 func main() {
@@ -39,15 +41,18 @@ func main() {
 	}
 	defer b.Close()
 
+	var client *acme.Client
+	if *useStaging {
+		client = &acme.Client{
+			DirectoryURL: "https://acme-staging.api.letsencrypt.org/directory",
+		}
+	}
+
 	m := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
 		HostPolicy: autocert.HostWhitelist("notquitevacation.com", "www.notquitevacation.com"),
 		Cache:      b,
-		/*
-			Client: &acme.Client{
-				DirectoryURL: "https://acme-staging.api.letsencrypt.org/directory",
-			},
-		*/
+		Client:     client,
 	}
 
 	tlsConfig := &tls.Config{
