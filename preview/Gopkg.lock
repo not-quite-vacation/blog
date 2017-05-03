@@ -1,10 +1,10 @@
-memo = "827b38e48fdabff648d44229e373aed2949781a7d07fbd6368e7e6d1247f8534"
+memo = "75a6945d7f60e40afff0e0d88a7048767f1cdc6be10c1092beceaeb0c1bf4321"
 
 [[projects]]
   branch = "master"
   name = "cloud.google.com/go"
   packages = ["compute/metadata","iam","internal","internal/optional","internal/version","storage"]
-  revision = "2f1da5d762c81a12c516bfb8a9ede96f42750361"
+  revision = "085c05ca074a8de9107005f9baa6308eae7eaf41"
 
 [[projects]]
   branch = "master"
@@ -19,10 +19,10 @@ memo = "827b38e48fdabff648d44229e373aed2949781a7d07fbd6368e7e6d1247f8534"
   revision = "9af46dd5a1713e8b5cd71106287eba3cefdde50b"
 
 [[projects]]
-  branch = "go-server"
+  branch = "master"
   name = "github.com/not-quite-vacation/blog"
   packages = ["blog"]
-  revision = "1687e1fe7cb174e3e5011b4a37603007578379f8"
+  revision = "0d6497c297ffe8a5aa263610351cc967db780663"
 
 [[projects]]
   branch = "master"
@@ -34,13 +34,13 @@ memo = "827b38e48fdabff648d44229e373aed2949781a7d07fbd6368e7e6d1247f8534"
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["acme","acme/autocert"]
-  revision = "c7af5bf2638a1164f2eb5467c39c6cffbd13a02e"
+  revision = "d1464577745bc7f4e74f65be9cfbd09436a729d6"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = ["context","context/ctxhttp","http2","http2/hpack","idna","internal/timeseries","lex/httplex","trace"]
-  revision = "da118f7b8e5954f39d0d2130ab35d4bf0e3cb344"
+  revision = "0819898fb4973868bba6de59b6aaad75beea9a6a"
 
 [[projects]]
   branch = "master"
@@ -73,7 +73,7 @@ memo = "827b38e48fdabff648d44229e373aed2949781a7d07fbd6368e7e6d1247f8534"
   revision = "411e09b969b1170a9f0c467558eb4c4c110d9c77"
 
 [[projects]]
-  branch = "master"
   name = "google.golang.org/grpc"
   packages = [".","codes","credentials","credentials/oauth","grpclb/grpc_lb_v1","grpclog","internal","keepalive","metadata","naming","peer","stats","status","tap","transport"]
-  revision = "0eb507a2ca07f13baf499f89d66cc566bf644643"
+  revision = "d2e1b51f33ff8c5e4a15560ff049d200e83726c5"
+  version = "v1.3.0"
