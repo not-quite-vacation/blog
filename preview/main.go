@@ -10,7 +10,6 @@ import (
 
 	"github.com/not-quite-vacation/blog/blog"
 
-	"golang.org/x/crypto/acme"
 	"golang.org/x/crypto/acme/autocert"
 )
 
@@ -44,9 +43,11 @@ func main() {
 		Prompt:     autocert.AcceptTOS,
 		HostPolicy: autocert.HostWhitelist("notquitevacation.com", "www.notquitevacation.com"),
 		Cache:      b,
-		Client: &acme.Client{
-			DirectoryURL: "https://acme-staging.api.letsencrypt.org/directory",
-		},
+		/*
+			Client: &acme.Client{
+				DirectoryURL: "https://acme-staging.api.letsencrypt.org/directory",
+			},
+		*/
 	}
 
 	tlsConfig := &tls.Config{

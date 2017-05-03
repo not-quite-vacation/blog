@@ -5,6 +5,7 @@ import (
 	"context"
 	"io"
 	"io/ioutil"
+	"log"
 	"sync"
 
 	"golang.org/x/crypto/acme/autocert"
@@ -40,11 +41,13 @@ func (b *bucket) Get(ctx context.Context, key string) ([]byte, error) {
 	} else if err != nil {
 		return nil, errors.Wrap(err, "could not create reader on bucket")
 	}
+	r.Close()
 	return ioutil.ReadAll(r)
 }
 
 func (b *bucket) Put(ctx context.Context, key string, data []byte) error {
 	w := b.Bucket(b.name).Object(key).NewWriter(ctx)
+	defer w.Close()
 	if _, err := io.Copy(w, bytes.NewBuffer(data)); err != nil {
 		return errors.Wrap(err, "could not write to object")
 	}
@@ -64,6 +67,7 @@ func (b *bucket) Delete(ctx context.Context, key string) error {
 		b.mu.Unlock()
 	}
 	if err := b.Bucket(b.name).Object(key).Delete(ctx); err == storage.ErrObjectNotExist {
+		log.Println(err)
 		return nil
 	} else if err != nil {
 		return errors.Wrap(err, "could not delete object")
