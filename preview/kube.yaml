@@ -17,7 +17,7 @@ spec:
         run: nqv
     spec:
       containers:
-      - image: IMAGE
+      - image: foolusion/nqv:170502215534
         command:
         - preview
         imagePullPolicy: Always

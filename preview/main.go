@@ -5,12 +5,12 @@ import (
 	"crypto/tls"
 	"flag"
 	"log"
-	"net"
 	"net/http"
 	"time"
 
 	"github.com/not-quite-vacation/blog/blog"
 
+	"golang.org/x/crypto/acme"
 	"golang.org/x/crypto/acme/autocert"
 )
 
@@ -42,8 +42,11 @@ func main() {
 
 	m := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
-		HostPolicy: autocert.HostWhitelist("www.notquitevacation.com"),
+		HostPolicy: autocert.HostWhitelist("notquitevacation.com", "www.notquitevacation.com"),
 		Cache:      b,
+		Client: &acme.Client{
+			DirectoryURL: "https://acme-staging.api.letsencrypt.org/directory",
+		},
 	}
 
 	tlsConfig := &tls.Config{

@@ -16,7 +16,7 @@ import (
 type bucket struct {
 	name string
 	*storage.Client
-	cert []byte
+	cert map[string][]byte
 	mu   sync.RWMutex
 }
 
@@ -31,8 +31,8 @@ func newBucket(ctx context.Context, name, project string) (*bucket, error) {
 func (b *bucket) Get(ctx context.Context, key string) ([]byte, error) {
 	b.mu.RLock()
 	defer b.mu.RUnlock()
-	if b.cert != nil {
-		return b.cert, nil
+	if b.cert != nil && b.cert[key] != nil {
+		return b.cert[key], nil
 	}
 	r, err := b.Bucket(b.name).Object(key).NewReader(ctx)
 	if err == storage.ErrObjectNotExist {
@@ -48,16 +48,21 @@ func (b *bucket) Put(ctx context.Context, key string, data []byte) error {
 	if _, err := io.Copy(w, bytes.NewBuffer(data)); err != nil {
 		return errors.Wrap(err, "could not write to object")
 	}
+	if b.cert == nil {
+		b.cert = make(map[string][]byte, 10)
+	}
 	b.mu.Lock()
-	b.cert = data
+	b.cert[key] = data
 	b.mu.Unlock()
 	return nil
 }
 
 func (b *bucket) Delete(ctx context.Context, key string) error {
-	b.mu.Lock()
-	b.cert = nil
-	b.mu.Unlock()
+	if b.cert != nil {
+		b.mu.Lock()
+		b.cert[key] = nil
+		b.mu.Unlock()
+	}
 	if err := b.Bucket(b.name).Object(key).Delete(ctx); err == storage.ErrObjectNotExist {
 		return nil
 	} else if err != nil {
