@@ -4,4 +4,4 @@ RUN apk add --no-cache ca-certificates
 COPY . $GOPATH/src/$pkg
 WORKDIR $GOPATH/src/$pkg
 RUN go install 
-ENTRYPOINT ["preview"]
+CMD echo "run preview if you want to see the blog"; exit 1

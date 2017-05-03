@@ -1,0 +1,5 @@
+languageCode = "en-us"
+title = "Not Quite Vacation"
+baseURL = "https://www.notquitevacation.com/"
+theme = "nqv-theme"
+disqusShortname = "notquitevacation"

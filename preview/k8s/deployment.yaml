@@ -17,7 +17,7 @@ spec:
         run: nqv
     spec:
       containers:
-      - image: foolusion/nqv:v0.0.8
+      - image: foolusion/nqv:170502202312
         imagePullPolicy: Always
         name: nqv
         env:

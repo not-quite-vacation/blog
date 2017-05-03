@@ -15,8 +15,8 @@ import (
 )
 
 var (
-	bucketName  = flag.String("bucket_name", "nqv", "the google cloud store bucket to use.")
-	projectName = flag.String("project_name", "notquitvacation", "the google cloud project.")
+	bucketName  = flag.String("bucket_name", "notquitevacation", "the google cloud store bucket to use.")
+	projectName = flag.String("project_name", "notquitevacation", "the google cloud project.")
 )
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 
 	m := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
-		HostPolicy: autocert.HostWhitelist("www.notquitevacation.com", "notquitevacation.com"),
+		HostPolicy: autocert.HostWhitelist("www.notquitevacation.com"),
 		Cache:      b,
 	}
 
