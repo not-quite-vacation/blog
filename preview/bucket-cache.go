@@ -55,6 +55,9 @@ func (b *bucket) Put(ctx context.Context, key string, data []byte) error {
 }
 
 func (b *bucket) Delete(ctx context.Context, key string) error {
+	b.mu.Lock()
+	b.cert = nil
+	b.mu.Unlock()
 	if err := b.Bucket(b.name).Object(key).Delete(ctx); err == storage.ErrObjectNotExist {
 		return nil
 	} else if err != nil {

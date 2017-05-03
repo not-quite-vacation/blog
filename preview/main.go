@@ -66,10 +66,7 @@ func main() {
 		TLSConfig:    tlsConfig,
 	}
 
-	lis, err := net.Listen("tcp", ":https")
-	if err != nil {
-		log.Fatal(err)
-	}
+	lis := m.Listener()
 	defer lis.Close()
 
 	log.Println("Starting not quite vacation...")
