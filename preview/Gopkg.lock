@@ -22,7 +22,7 @@ memo = "fb74c8be300cdd980c2f646bc8cf73765e22d5dcd266f8f8eda5d27a09a582cf"
   branch = "master"
   name = "github.com/not-quite-vacation/blog"
   packages = ["blog"]
-  revision = "0d6497c297ffe8a5aa263610351cc967db780663"
+  revision = "40948c3906808a73e41a27e871265a3eb6dc0e32"
 
 [[projects]]
   branch = "master"
