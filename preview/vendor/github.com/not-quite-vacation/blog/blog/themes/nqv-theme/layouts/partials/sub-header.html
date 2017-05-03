@@ -1,0 +1,9 @@
+<header class="header">
+  <h1 class="header-title">{{ .Site.Title}}</h1>
+</header>
+<nav class="nav">
+  <ul>
+    <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+  {{ with .Site.GetPage "section" "post" }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end}}
+</nav>
+<main class="main">
