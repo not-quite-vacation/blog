@@ -6,7 +6,7 @@ steps:
   args: ['get', 'github.com/mjibson/esc']
   env: ['PROJECT_ROOT=github.com/not-quite-vacation/blog']
 - name: 'alpine'
-  args: ['gopath/bin/hugo']
+  args: ['../gopath/bin/hugo']
   dir: 'blog'
 - name: 'gcr.io/cloud-builders/go:alpine'
   args: ['generate', 'blog/blog.go']
