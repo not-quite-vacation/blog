@@ -1,0 +1,17 @@
+steps:
+- name: 'gcr.io/cloud-builders/go:alpine'
+  args: ['get', 'github.com/spf13/hugo']
+- name: 'grc.io/cloud-builders/go:alpine'
+  args: ['get', 'github.com/mjibson/esc']
+- name: 'alpine'
+  args: ['gopath/bin/hugo']
+  dir: 'blog'
+- name: 'gcr.io/cloud-builders/go:alpine'
+  args: ['generate', 'blog/blog.go']
+- name: 'gcr.io/cloud-builders/go:alpine'
+  args: ['install', 'preview']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/blog:$BRANCH_NAME', '.']
+  dir: 'preview'
+
+images: ['gcr.io/$PROJECT_ID/blog:$BRANCH_NAME']
