@@ -41,7 +41,7 @@ func (b *bucket) Get(ctx context.Context, key string) ([]byte, error) {
 	} else if err != nil {
 		return nil, errors.Wrap(err, "could not create reader on bucket")
 	}
-	r.Close()
+	defer r.Close()
 	return ioutil.ReadAll(r)
 }
 

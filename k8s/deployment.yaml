@@ -19,7 +19,7 @@ spec:
       containers:
       - image: IMAGE
         command:
-        - preview
+        - blog
         imagePullPolicy: Always
         name: nqv
         env:

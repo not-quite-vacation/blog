@@ -1,15 +1,10 @@
-tag := foolusion/nqv:$(shell date +%y%m%d%H%M%S)
+image := gcr.io/notquitevacation/blog
+tag := cloud-build-test
 
 all: kube.yaml
 
-preview: main.go bucket-cache.go ../blog/static.go
-	CGO_ENABLED=0 GOOS=linux go build -a -tags netgo -ldflags '-w' .
+kube.yaml: 
+	sed "s#IMAGE#${image}:${tag}#;" k8s/deployment.yaml > kube.yaml
 
-docker/build: main.go bucket-cache.go
-	docker build -t ${tag} .
-
-docker/push: docker/build
-	docker push ${tag}
-
-kube.yaml: docker/push
-	sed "s#IMAGE#${tag}#;" k8s/deployment.yaml > kube.yaml
+kube/deploy: kube.yaml
+	kubectl apply -f kube.yaml
