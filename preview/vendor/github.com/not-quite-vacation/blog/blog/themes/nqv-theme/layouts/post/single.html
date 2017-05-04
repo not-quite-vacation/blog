@@ -1,7 +1,0 @@
-{{ partial "header.html" . }}
-{{ partial "sub-header.html" . }}
-	<h1>{{ .Title }}</h1>
-	<h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
-	{{ .Content }}
-	{{ template "_internal/disqus.html" . }}
-{{ partial "footer.html" .  }}
