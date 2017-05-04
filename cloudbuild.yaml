@@ -1,10 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/go:alpine'
   args: ['get', 'github.com/spf13/hugo']
-  env: ['PROJECT_ROOT=github.com/not-quite-vacation/blog']
+  env: ['PROJECT_ROOT=.']
 - name: 'gcr.io/cloud-builders/go:alpine'
   args: ['get', 'github.com/mjibson/esc']
-  env: ['PROJECT_ROOT=github.com/not-quite-vacation/blog']
+  env: ['PROJECT_ROOT=.']
 - name: 'alpine'
   args: ['../gopath/bin/hugo']
   dir: 'blog'
@@ -12,7 +12,7 @@ steps:
   args: ['../gopath/bin/esc', '-o', 'static.go', '-prefix=public', '-pkg=blog', 'public']
   dir: 'blog'
 - name: 'gcr.io/cloud-builders/go:alpine'
-  args: ['install', '.']
+  args: ['install', 'github.com/not-quite-vacation/blog/preview']
   env: ['PROJECT_ROOT=github.com/not-quite-vacation/blog']
   dir: 'preview'
 - name: 'gcr.io/cloud-builders/docker'
