@@ -12,7 +12,7 @@ steps:
   args: ['../gopath/bin/esc', '-o', 'static.go', '-prefix=public', '-pkg=blog', 'public']
   dir: 'blog'
 - name: 'gcr.io/cloud-builders/go:alpine'
-  args: ['install', 'preview']
+  args: ['install', '.']
   env: ['PROJECT_ROOT=github.com/not-quite-vacation/blog']
   dir: 'preview'
 - name: 'gcr.io/cloud-builders/docker'
