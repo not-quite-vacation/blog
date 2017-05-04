@@ -9,7 +9,7 @@ steps:
   args: ['../gopath/bin/hugo']
   dir: 'blog'
 - name: 'alpine'
-  args: ['../gopath/bin/esc' '-o' 'static.go' '-prefix=public' '-pkg=blog' 'public']
+  args: ['../gopath/bin/esc', '-o', 'static.go', '-prefix=public', '-pkg=blog', 'public']
   dir: 'blog'
 - name: 'gcr.io/cloud-builders/go:alpine'
   args: ['install', 'preview']
