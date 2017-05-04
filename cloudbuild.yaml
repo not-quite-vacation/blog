@@ -14,9 +14,7 @@ steps:
 - name: 'gcr.io/cloud-builders/go:alpine'
   args: ['install', 'github.com/not-quite-vacation/blog/preview']
   env: ['PROJECT_ROOT=github.com/not-quite-vacation/blog']
-  dir: 'preview'
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/blog:$BRANCH_NAME', '.']
-  dir: 'preview'
 
 images: ['gcr.io/$PROJECT_ID/blog:$BRANCH_NAME']
