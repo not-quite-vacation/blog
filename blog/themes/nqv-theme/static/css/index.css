@@ -53,6 +53,22 @@ body {
     width: 100%;
 }
 
+.aboutContainer .text {
+    flex: 1;
+    padding-left: 24px; }
+    .aboutContainer .text h1 {
+        text-align: center; }
+
+.aboutContainer .img {
+    flex: 1;
+    width: inherit;
+    max-width: 100%;
+}
+
+.aboutContainer {
+    display: flex;
+}
+
 .nav {
     width: 100%;
 }
@@ -102,9 +118,10 @@ body > header > h1 {
     max-width: 100%;
     max-height: 100%;
 }
-
+.main h1 {
+    text-align: center;
+}
 h2 {
-    line-height: 72px;
     margin:0px;
 }
 .header-title {
@@ -112,7 +129,9 @@ h2 {
     font-size: 20px;
     margin: 0;
 }
-
+.main footer {
+    margin:16px;
+}
 .nav .navItem {
     padding: 16px 16px 0 16px;
     display: flex;
@@ -155,32 +174,31 @@ a:visited {
     color: #1a4e99;
 }
 
-.post-summary {
+.postSummary {
     margin: 0px 16px 16px 16px;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 2px;
     max-width: 600px;
+    border: groove;
 }
 
-.post-summary-header {
-    margin: 0;
-    padding: 24px 0px 0px 0px;
+.postSummaryHeader {
+    margin: 24px;
 }
 
-.post-summary-header .title {
+.postSummaryHeader .title {
     padding: 0px 16px;
     font-size: 20px;
     margin: 0px;
     line-height: 32px;
 }
 
-.post-summary-header .author {
+.postSummaryHeader .author {
     padding: 0px 16px;
     font-size: 16px;
     margin: 0px;
     line-height: 24px;
 }
 
-.post-summary-body {
+.postSummaryBody {
     margin: 16px;
 }
