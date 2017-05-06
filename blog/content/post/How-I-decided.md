@@ -18,10 +18,15 @@ emotions: The fear of letting go on the things that you are used to, the moment
 of taking off and embracing the unknown, and the courage to not settle and
 choose what really makes you happy. 
 
+
 So hey I think I would enjoy spending some
-time on just seeing the world and doing absolutely nothing.
+time on just seeing the world and doing absolutely nothing!
+
 
 ### It's Hard to Hide Your Happiness
 
 ![comic two week notice](/img/twoweeknotice.png)
 
+Here's me jumping on to the helicopter like Walter Mitty. 
+
+![Vicki Jumping on to the helicopter](/img/vicki-mitty.gif)
