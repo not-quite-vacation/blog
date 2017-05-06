@@ -1,5 +1,16 @@
 {{ partial "header.html" . }}
 {{ partial "sub-header.html" . }}
+<article id="about">
+  <div class="aboutContainer">
+    <img class="img" src="/img/about.png">
+    <div class="text">
+      <h1> About </h1>
+      <p>Hi! It's Andrew and Vicki. We are two big kids who plan to 
+        travel the world with our bikes! This blog is to keep Oscar(our cat) posted. </p>
+    <div>
+  </div>
+</article>
+
 <h1>Recent Posts</h1>
 {{- range first 10 .Data.Pages -}}
 {{- if eq .Type "post" }}
@@ -9,9 +20,11 @@
     <div class="postSummaryHeader author">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .Params.author }}</div>
   </header>
   {{ with .Params.featured_image }}<img class="postSummaryImg"src="{{ . }}">{{ end }}
+  <div class="postSummaryBody">
   {{ .Summary }}
+  </div>
   <footer>
-    <a href="{{ .Permalink }}">Read More</a>
+    <a href="{{ .Permalink }}">>> Read More</a>
   </footer>
 </article>
 {{- end -}}
