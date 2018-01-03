@@ -1,4 +1,5 @@
 blog/public
+blog/static.go
 preview
 kube.yaml
 serve
