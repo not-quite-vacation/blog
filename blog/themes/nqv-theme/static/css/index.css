@@ -11,6 +11,7 @@ html, body {
     font-weight: 400;
     font-display: optional;
     color: #444;
+    overflow-x: hidden;
 }
 
 body {
@@ -70,7 +71,8 @@ body {
     #logo > img {
         margin: auto;
         display: block;
-        max-width: 100%; }
+        max-width: 100%;
+        height: 256px; }
 
 .main {
     width: 100%;
@@ -232,4 +234,17 @@ a:visited {
 
 .postSummaryBody {
     margin: 16px;
+}
+
+article > img.bg
+{
+  width: 2800px;
+  z-index: 0;
+  margin-left: calc(-1 * ((2800px - 100%) / 2));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg:before{
+    padding-top: 100%;
 }
