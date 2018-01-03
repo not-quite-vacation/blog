@@ -11,7 +11,6 @@ html, body {
     font-weight: 400;
     font-display: optional;
     color: #444;
-    overflow-x: hidden;
 }
 
 body {
@@ -236,15 +235,11 @@ a:visited {
     margin: 16px;
 }
 
-article > img.bg
-{
-  width: 2800px;
+#banner {
+  width: 100vw;
   z-index: 0;
-  margin-left: calc(-1 * ((2800px - 100%) / 2));
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg:before{
-    padding-top: 100%;
-}
+  overflow: hidden;
+  margin-left: calc(-1 * ((100vw - 98%) / 2));}
+  #banner > img {
+      width: 2800px;
+      margin-left: calc(-1 * (2800px - 100%) / 2);}
