@@ -9,6 +9,7 @@ html, body {
     width: 100%;
     font-family: 'Helvetica', 'Verdana', sans-serif;
     font-weight: 400;
+    line-height: 150%;
     font-display: optional;
     color: #444;
 }
@@ -100,7 +101,6 @@ body {
     }
     .main {
         font-size: 24px;
-        margin: auto;
     }
     #ytplayer {
         width: 560px;
@@ -146,12 +146,14 @@ body {
 }
 
 .main p img {
-    margin: 0;
+    margin: auto;
+    display:block;
     max-width: 100%;
     max-height: 100%;
 }
 .main h1 {
     text-align: center;
+    line-height: normal;
 }
 h2 {
     margin:0px;
@@ -243,3 +245,4 @@ a:visited {
   #banner > img {
       width: 2800px;
       margin-left: calc(-1 * (2800px - 100%) / 2);}
+
