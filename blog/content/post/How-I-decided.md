@@ -12,21 +12,16 @@ helicopter.<!--more-->
 
 <iframe id="ytplayer" src="https://www.youtube.com/embed/HEwtPwkeXjw" frameborder="0" allowfullscreen></iframe>
 
-I was so touched by this scene. It seems so easy and so hard the same time when
-one just takes a leap of faith and jumps right on to the helicopter. All the
-emotions: The fear of letting go on the things that you are used to, the moment
-of taking off and embracing the unknown, and the courage to not settle and
-choose what really makes you happy. 
+I love this scene. It is so easy and so hard the same time to take a leap of faith and jump right on to a helicopter. 
 
+
+All the emotions: the fear of letting go on the things you have (steady job, my airplants, designer mugs, and Andrew's cat etc.), the excitement of taking off and embracing the unknown, and the courage to not settle but to live a life you dreamed of. 
 
 So hey I think I would enjoy spending some
-time on just seeing the world and doing absolutely nothing!
+time seeing the world and doing absolutely nothing!
 
 
-### It's Hard to Hide Your Happiness
+### Here's me jumping on to a helicopter like Walter Mitty.
 
-![comic two week notice](/img/twoweeknotice.png)
-
-Here's me jumping on to the helicopter like Walter Mitty. 
 
 ![Vicki Jumping on to the helicopter](/img/vicki-mitty.gif)
