@@ -24,6 +24,6 @@ Initially, I thought we could just stop by Windsor castle casually. But there wa
 
 So we didn't go to Windsor castle (heard it's one of Britain's best castles). Oh well…
 
-We then stopped for lunch at a fancy place since we were dying at 2 and it  was the only option (but hey all places in England look fancy). After lunch we felt pumped again and was able to ride the remaining 25 miles to our hostel. The last few miles had a little climb. It was hard, but we made it sort of before dark and I definitely deserve a nice cold beer to celebrate. 
+We then stopped for lunch at a fancy place since we were dying at 2 and it  was the only option (but hey all places in England look fancy). After lunch we felt pumped again and was able to ride the remaining 25 miles to our hostel. The last few miles had a little climb. It was hard, but we made it sort of before dark and I was very happy that I had a great first day riding in England! 
 
 ![Our first day beer on the road](/img/IMG_0078.JPG)
