@@ -1,46 +1,121 @@
-{{ partial "header.html" . }}
-{{ partial "sub-header.html" . }}
-<article>
-  <div id="banner">
-    <img class="bg" src="/img/homephoto.jpg">
-  </div>
-</article>
+{{ partial "header.html" . }} {{ partial "sub-header.html" . }}
 
-<article id="about">
-  <div class="aboutContainer">
-    <div class="img">
-      <img src="/img/about.png">
+<main class="main">
+  <div id="logocountup">
+    <div id="logo">
+      <img src="/img/logo.png">
     </div>
-    <div class="text">
-      <h1> About </h1>
-      <p>Hi! It's Andrew and Vicki. We are two big kids who plan to 
-        travel the world with our bikes! This blog is to keep Oscar(our cat) posted. </p>
-    <div>
+    <div id="bubble">
+      <h1>My human slave has left me with his Mom</h1>
+      <div id="clockdiv">
+        <div>
+          <span class="time days"></span>
+          <span class="smalltext">days</span>
+        </div>
+        <div>
+          <span class="time hours"></span>
+          <span class="smalltext">h</span>
+        </div>
+        <div>
+          <span class="time minutes"></span>
+          <span class="smalltext">m</span>
+        </div>
+        <div>
+          <span class="time seconds"></span>
+          <span class="smalltext">s</span>
+        </div>
+      </div>
+      <h1>ago and has visited 13 countries on their bikes</h1>
+      <h1> WHAT EVER </h>
+    </div>
   </div>
-</article>
 
-<h1>Recent Posts</h1>
-{{- range first 10 .Data.Pages -}}
-{{- if eq .Type "post" }}
-<article class="postSummary">
-  <header>
-    <h2 class="postSummaryHeader title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <div class="postSummaryHeader author">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .Params.author }}</div>
-  </header>
-  {{ with .Params.featured_image }}<img class="postSummaryImg"src="{{ . }}">{{ end }}
-  <div class="postSummaryBody">
-  {{ .Summary }}
-  </div>
-  <footer>
-    <a href="{{ .Permalink }}">>> Read More</a>
-  </footer>
-</article>
-{{- end -}}
-{{- end }}
-<h2>Pages</h2>
-{{- range first 10 .Data.Pages -}}
-{{- if eq .Type "page" }}
-<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-{{- end -}}
-{{- end }}
-{{ partial "footer.html" . }}
+  <article>
+    <div id="banner">
+      <img class="bg" src="/img/homephoto.jpg">
+    </div>
+  </article>
+
+  <article id="about">
+    <div class="aboutContainer">
+      <div class="img">
+        <img src="/img/about.png">
+      </div>
+      <div class="text">
+        <h1> About </h1>
+        <p>Hi! It's Andrew and Vicki. We are two big kids who plan to travel the world with our bikes! This blog is to keep
+          Oscar(our cat) posted. </p>
+        <div>
+        </div>
+  </article>
+
+  <h1>Recent Posts</h1>
+  {{- range first 10 .Data.Pages -}} {{- if eq .Type "post" }}
+  <article class="postSummary">
+    <header>
+      <h2 class="postSummaryHeader title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      <div class="postSummaryHeader author">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .Params.author }}</div>
+    </header>
+    {{ with .Params.featured_image }}
+    <img class="postSummaryImg" src="{{ . }}">{{ end }}
+    <div class="postSummaryBody">
+      {{ .Summary }}
+    </div>
+    <footer>
+      <a href="{{ .Permalink }}">>> Read More</a>
+    </footer>
+  </article>
+  {{- end -}} {{- end }}
+  <h2>Pages</h2>
+  {{- range first 10 .Data.Pages -}} {{- if eq .Type "page" }}
+  <h4>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h4>
+  {{- end -}} {{- end }}
+  <script>
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(new Date()) - Date.parse(endtime);
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = '2017-05-17';
+    initializeClock('clockdiv', deadline);
+
+
+  </script> {{ partial "footer.html" . }}
