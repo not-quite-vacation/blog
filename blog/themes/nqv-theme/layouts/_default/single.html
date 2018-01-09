@@ -1,4 +1,11 @@
 {{ partial "header.html" . }}
-	<h1>{{ .Title }}</h1>
-	{{ .Content }}
-{{ partial "footer.html" .  }}
+<main class="main">
+		<div id="logocountup">
+			<div id="logo">
+				<img src="/img/logo.png">
+			</div>
+		</div>
+		<h1>
+			{{ .Title }}
+		</h1>
+	{{ .Content }} {{ partial "footer.html" . }}
