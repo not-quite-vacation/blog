@@ -3,6 +3,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
 	"os/exec"
@@ -12,12 +13,16 @@ import (
 )
 
 func main() {
+	fmt.Println("building the blog...")
+	fmt.Println("runing hugo...")
 	if err := runHugo(); err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println("running go generate...")
 	if err := runGoGenerate(); err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println("running go build...")
 	if err := runGoBuild(); err != nil {
 		log.Fatal(err)
 	}
