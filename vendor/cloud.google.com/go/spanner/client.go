@@ -25,9 +25,10 @@ import (
 	"cloud.google.com/go/internal/version"
 	"golang.org/x/net/context"
 	"google.golang.org/api/option"
-	"google.golang.org/api/transport"
+	gtransport "google.golang.org/api/transport/grpc"
 	sppb "google.golang.org/genproto/googleapis/spanner/v1"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"
 )
 
@@ -37,9 +38,12 @@ const (
 	// resourcePrefixHeader is the name of the metadata header used to indicate
 	// the resource being operated on.
 	resourcePrefixHeader = "google-cloud-resource-prefix"
-	// apiClientHeader is the name of the metadata header used to indicate client
+	// xGoogHeaderKey is the name of the metadata header used to indicate client
 	// information.
-	apiClientHeader = "x-goog-api-client"
+	xGoogHeaderKey = "x-goog-api-client"
+
+	// numChannels is the default value for NumChannels of client
+	numChannels = 4
 )
 
 const (
@@ -51,8 +55,8 @@ const (
 )
 
 var (
-	validDBPattern  = regexp.MustCompile("^projects/[^/]+/instances/[^/]+/databases/[^/]+$")
-	clientUserAgent = fmt.Sprintf("gl-go/%s gccl/%s grpc/%s", version.Go(), version.Repo, grpc.Version)
+	validDBPattern = regexp.MustCompile("^projects/[^/]+/instances/[^/]+/databases/[^/]+$")
+	xGoogHeaderVal = fmt.Sprintf("gl-go/%s gccl/%s grpc/%s", version.Go(), version.Repo, grpc.Version)
 )
 
 func validDatabaseName(db string) error {
@@ -79,6 +83,7 @@ type Client struct {
 // ClientConfig has configurations for the client.
 type ClientConfig struct {
 	// NumChannels is the number of GRPC channels.
+	// If zero, numChannels is used.
 	NumChannels int
 	co          []option.ClientOption
 	// SessionPoolConfig is the configuration for session pool.
@@ -92,12 +97,12 @@ func errDial(ci int, err error) error {
 	return e
 }
 
-func contextWithMetadata(ctx context.Context, md metadata.MD) context.Context {
-	existing, ok := metadata.FromContext(ctx)
+func contextWithOutgoingMetadata(ctx context.Context, md metadata.MD) context.Context {
+	existing, ok := metadata.FromOutgoingContext(ctx)
 	if ok {
 		md = metadata.Join(existing, md)
 	}
-	return metadata.NewContext(ctx, md)
+	return metadata.NewOutgoingContext(ctx, md)
 }
 
 // NewClient creates a client to a database. A valid database name has the
@@ -118,17 +123,33 @@ func NewClientWithConfig(ctx context.Context, database string, config ClientConf
 		database: database,
 		md: metadata.Pairs(
 			resourcePrefixHeader, database,
-			apiClientHeader, clientUserAgent,
-			"x-goog-api-client", fmt.Sprintf("gl-go/%s gccl/%s grpc/", version.Go(), version.Repo)),
+			xGoogHeaderKey, xGoogHeaderVal),
 	}
-	allOpts := []option.ClientOption{option.WithEndpoint(prodAddr), option.WithScopes(Scope), option.WithUserAgent(clientUserAgent)}
+	allOpts := []option.ClientOption{
+		option.WithEndpoint(prodAddr),
+		option.WithScopes(Scope),
+		option.WithGRPCDialOption(
+			grpc.WithDefaultCallOptions(
+				grpc.MaxCallSendMsgSize(100<<20),
+				grpc.MaxCallRecvMsgSize(100<<20),
+			),
+		),
+	}
+	allOpts = append(allOpts, openCensusOptions()...)
 	allOpts = append(allOpts, opts...)
 	// Prepare gRPC channels.
 	if config.NumChannels == 0 {
-		config.NumChannels = 4
+		config.NumChannels = numChannels
+	}
+	// Default MaxOpened sessions
+	if config.MaxOpened == 0 {
+		config.MaxOpened = uint64(config.NumChannels * 100)
+	}
+	if config.MaxBurst == 0 {
+		config.MaxBurst = 10
 	}
 	for i := 0; i < config.NumChannels; i++ {
-		conn, err := transport.DialGRPC(ctx, allOpts...)
+		conn, err := gtransport.Dial(ctx, allOpts...)
 		if err != nil {
 			return nil, errDial(i, err)
 		}
@@ -198,6 +219,15 @@ func (c *Client) ReadOnlyTransaction() *ReadOnlyTransaction {
 	return t
 }
 
+type transactionInProgressKey struct{}
+
+func checkNestedTxn(ctx context.Context) error {
+	if ctx.Value(transactionInProgressKey{}) != nil {
+		return spannerErrorf(codes.FailedPrecondition, "Cloud Spanner does not support nested transactions")
+	}
+	return nil
+}
+
 // ReadWriteTransaction executes a read-write transaction, with retries as
 // necessary.
 //
@@ -213,12 +243,15 @@ func (c *Client) ReadOnlyTransaction() *ReadOnlyTransaction {
 // To limit the number of retries, set a deadline on the Context rather than
 // using a fixed limit on the number of attempts. ReadWriteTransaction will
 // retry as needed until that deadline is met.
-func (c *Client) ReadWriteTransaction(ctx context.Context, f func(t *ReadWriteTransaction) error) (time.Time, error) {
+func (c *Client) ReadWriteTransaction(ctx context.Context, f func(context.Context, *ReadWriteTransaction) error) (time.Time, error) {
+	if err := checkNestedTxn(ctx); err != nil {
+		return time.Time{}, err
+	}
 	var (
 		ts time.Time
 		sh *sessionHandle
 	)
-	err := runRetryable(ctx, func(ctx context.Context) error {
+	err := runRetryableNoWrap(ctx, func(ctx context.Context) error {
 		var (
 			err error
 			t   *ReadWriteTransaction
@@ -245,10 +278,7 @@ func (c *Client) ReadWriteTransaction(ctx context.Context, f func(t *ReadWriteTr
 			return errRetry(err)
 		}
 		ts, err = t.runInTransaction(ctx, f)
-		if err != nil {
-			return err
-		}
-		return nil
+		return err
 	})
 	if sh != nil {
 		sh.recycle()
@@ -289,7 +319,7 @@ func (c *Client) Apply(ctx context.Context, ms []*Mutation, opts ...ApplyOption)
 		opt(ao)
 	}
 	if !ao.atLeastOnce {
-		return c.ReadWriteTransaction(ctx, func(t *ReadWriteTransaction) error {
+		return c.ReadWriteTransaction(ctx, func(ctx context.Context, t *ReadWriteTransaction) error {
 			t.BufferWrite(ms)
 			return nil
 		})

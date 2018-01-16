@@ -146,10 +146,13 @@ type ErrorContext struct {
 	// For a logged exception this would be the source line where
 	// the
 	// exception is logged, usually close to the place where it was
-	// caught. This value is in contrast to
-	// `Exception.cause_location`,
-	// which describes the source line where the exception was thrown.
+	// caught.
 	ReportLocation *SourceLocation `json:"reportLocation,omitempty"`
+
+	// SourceReferences: Source code that was used to build the executable
+	// which has
+	// caused the given error message.
+	SourceReferences []*SourceReference `json:"sourceReferences,omitempty"`
 
 	// User: The user who caused or was affected by the crash.
 	// This can be a user ID, an email address, or an arbitrary token
@@ -183,8 +186,8 @@ type ErrorContext struct {
 }
 
 func (s *ErrorContext) MarshalJSON() ([]byte, error) {
-	type noMethod ErrorContext
-	raw := noMethod(*s)
+	type NoMethod ErrorContext
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -226,8 +229,8 @@ type ErrorEvent struct {
 }
 
 func (s *ErrorEvent) MarshalJSON() ([]byte, error) {
-	type noMethod ErrorEvent
-	raw := noMethod(*s)
+	type NoMethod ErrorEvent
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -268,8 +271,8 @@ type ErrorGroup struct {
 }
 
 func (s *ErrorGroup) MarshalJSON() ([]byte, error) {
-	type noMethod ErrorGroup
-	raw := noMethod(*s)
+	type NoMethod ErrorGroup
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -365,8 +368,8 @@ type ErrorGroupStats struct {
 }
 
 func (s *ErrorGroupStats) MarshalJSON() ([]byte, error) {
-	type noMethod ErrorGroupStats
-	raw := noMethod(*s)
+	type NoMethod ErrorGroupStats
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -418,8 +421,8 @@ type HttpRequestContext struct {
 }
 
 func (s *HttpRequestContext) MarshalJSON() ([]byte, error) {
-	type noMethod HttpRequestContext
-	raw := noMethod(*s)
+	type NoMethod HttpRequestContext
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -460,8 +463,8 @@ type ListEventsResponse struct {
 }
 
 func (s *ListEventsResponse) MarshalJSON() ([]byte, error) {
-	type noMethod ListEventsResponse
-	raw := noMethod(*s)
+	type NoMethod ListEventsResponse
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -509,8 +512,8 @@ type ListGroupStatsResponse struct {
 }
 
 func (s *ListGroupStatsResponse) MarshalJSON() ([]byte, error) {
-	type noMethod ListGroupStatsResponse
-	raw := noMethod(*s)
+	type NoMethod ListGroupStatsResponse
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -593,8 +596,8 @@ type ReportedErrorEvent struct {
 }
 
 func (s *ReportedErrorEvent) MarshalJSON() ([]byte, error) {
-	type noMethod ReportedErrorEvent
-	raw := noMethod(*s)
+	type NoMethod ReportedErrorEvent
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -652,8 +655,8 @@ type ServiceContext struct {
 }
 
 func (s *ServiceContext) MarshalJSON() ([]byte, error) {
-	type noMethod ServiceContext
-	raw := noMethod(*s)
+	type NoMethod ServiceContext
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -697,8 +700,45 @@ type SourceLocation struct {
 }
 
 func (s *SourceLocation) MarshalJSON() ([]byte, error) {
-	type noMethod SourceLocation
-	raw := noMethod(*s)
+	type NoMethod SourceLocation
+	raw := NoMethod(*s)
+	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
+}
+
+// SourceReference: A reference to a particular snapshot of the source
+// tree used to build and
+// deploy an application.
+type SourceReference struct {
+	// Repository: Optional. A URI string identifying the
+	// repository.
+	// Example: "https://github.com/GoogleCloudPlatform/kubernetes.git"
+	Repository string `json:"repository,omitempty"`
+
+	// RevisionId: The canonical and persistent identifier of the deployed
+	// revision.
+	// Example (git): "0035781c50ec7aa23385dc841529ce8a4b70db1b"
+	RevisionId string `json:"revisionId,omitempty"`
+
+	// ForceSendFields is a list of field names (e.g. "Repository") to
+	// unconditionally include in API requests. By default, fields with
+	// empty values are omitted from API requests. However, any non-pointer,
+	// non-interface field appearing in ForceSendFields will be sent to the
+	// server regardless of whether the field is empty or not. This may be
+	// used to include empty fields in Patch requests.
+	ForceSendFields []string `json:"-"`
+
+	// NullFields is a list of field names (e.g. "Repository") to include in
+	// API requests with the JSON null value. By default, fields with empty
+	// values are omitted from API requests. However, any field with an
+	// empty value appearing in NullFields will be sent to the server as
+	// null. It is an error if a field in this list has a non-empty value.
+	// This may be used to include null fields in Patch requests.
+	NullFields []string `json:"-"`
+}
+
+func (s *SourceReference) MarshalJSON() ([]byte, error) {
+	type NoMethod SourceReference
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -734,8 +774,8 @@ type TimedCount struct {
 }
 
 func (s *TimedCount) MarshalJSON() ([]byte, error) {
-	type noMethod TimedCount
-	raw := noMethod(*s)
+	type NoMethod TimedCount
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -765,8 +805,8 @@ type TrackingIssue struct {
 }
 
 func (s *TrackingIssue) MarshalJSON() ([]byte, error) {
-	type noMethod TrackingIssue
-	raw := noMethod(*s)
+	type NoMethod TrackingIssue
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -863,7 +903,7 @@ func (c *ProjectsDeleteEventsCall) Do(opts ...googleapi.CallOption) (*DeleteEven
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -1068,7 +1108,7 @@ func (c *ProjectsEventsListCall) Do(opts ...googleapi.CallOption) (*ListEventsRe
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -1276,7 +1316,7 @@ func (c *ProjectsEventsReportCall) Do(opts ...googleapi.CallOption) (*ReportErro
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -1533,7 +1573,7 @@ func (c *ProjectsGroupStatsListCall) Do(opts ...googleapi.CallOption) (*ListGrou
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -1772,7 +1812,7 @@ func (c *ProjectsGroupsGetCall) Do(opts ...googleapi.CallOption) (*ErrorGroup, e
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -1905,7 +1945,7 @@ func (c *ProjectsGroupsUpdateCall) Do(opts ...googleapi.CallOption) (*ErrorGroup
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil

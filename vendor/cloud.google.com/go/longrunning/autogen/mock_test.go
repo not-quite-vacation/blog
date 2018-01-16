@@ -1,4 +1,4 @@
-// Copyright 2017, Google Inc. All rights reserved.
+// Copyright 2017, Google LLC All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -23,10 +23,12 @@ import (
 
 import (
 	"flag"
+	"fmt"
 	"io"
 	"log"
 	"net"
 	"os"
+	"strings"
 	"testing"
 
 	"github.com/golang/protobuf/proto"
@@ -36,6 +38,8 @@ import (
 	status "google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/metadata"
+	gstatus "google.golang.org/grpc/status"
 )
 
 var _ = io.EOF
@@ -57,7 +61,11 @@ type mockOperationsServer struct {
 	resps []proto.Message
 }
 
-func (s *mockOperationsServer) ListOperations(_ context.Context, req *longrunningpb.ListOperationsRequest) (*longrunningpb.ListOperationsResponse, error) {
+func (s *mockOperationsServer) ListOperations(ctx context.Context, req *longrunningpb.ListOperationsRequest) (*longrunningpb.ListOperationsResponse, error) {
+	md, _ := metadata.FromIncomingContext(ctx)
+	if xg := md["x-goog-api-client"]; len(xg) == 0 || !strings.Contains(xg[0], "gl-go/") {
+		return nil, fmt.Errorf("x-goog-api-client = %v, expected gl-go key", xg)
+	}
 	s.reqs = append(s.reqs, req)
 	if s.err != nil {
 		return nil, s.err
@@ -65,7 +73,11 @@ func (s *mockOperationsServer) ListOperations(_ context.Context, req *longrunnin
 	return s.resps[0].(*longrunningpb.ListOperationsResponse), nil
 }
 
-func (s *mockOperationsServer) GetOperation(_ context.Context, req *longrunningpb.GetOperationRequest) (*longrunningpb.Operation, error) {
+func (s *mockOperationsServer) GetOperation(ctx context.Context, req *longrunningpb.GetOperationRequest) (*longrunningpb.Operation, error) {
+	md, _ := metadata.FromIncomingContext(ctx)
+	if xg := md["x-goog-api-client"]; len(xg) == 0 || !strings.Contains(xg[0], "gl-go/") {
+		return nil, fmt.Errorf("x-goog-api-client = %v, expected gl-go key", xg)
+	}
 	s.reqs = append(s.reqs, req)
 	if s.err != nil {
 		return nil, s.err
@@ -73,7 +85,11 @@ func (s *mockOperationsServer) GetOperation(_ context.Context, req *longrunningp
 	return s.resps[0].(*longrunningpb.Operation), nil
 }
 
-func (s *mockOperationsServer) DeleteOperation(_ context.Context, req *longrunningpb.DeleteOperationRequest) (*emptypb.Empty, error) {
+func (s *mockOperationsServer) DeleteOperation(ctx context.Context, req *longrunningpb.DeleteOperationRequest) (*emptypb.Empty, error) {
+	md, _ := metadata.FromIncomingContext(ctx)
+	if xg := md["x-goog-api-client"]; len(xg) == 0 || !strings.Contains(xg[0], "gl-go/") {
+		return nil, fmt.Errorf("x-goog-api-client = %v, expected gl-go key", xg)
+	}
 	s.reqs = append(s.reqs, req)
 	if s.err != nil {
 		return nil, s.err
@@ -81,7 +97,11 @@ func (s *mockOperationsServer) DeleteOperation(_ context.Context, req *longrunni
 	return s.resps[0].(*emptypb.Empty), nil
 }
 
-func (s *mockOperationsServer) CancelOperation(_ context.Context, req *longrunningpb.CancelOperationRequest) (*emptypb.Empty, error) {
+func (s *mockOperationsServer) CancelOperation(ctx context.Context, req *longrunningpb.CancelOperationRequest) (*emptypb.Empty, error) {
+	md, _ := metadata.FromIncomingContext(ctx)
+	if xg := md["x-goog-api-client"]; len(xg) == 0 || !strings.Contains(xg[0], "gl-go/") {
+		return nil, fmt.Errorf("x-goog-api-client = %v, expected gl-go key", xg)
+	}
 	s.reqs = append(s.reqs, req)
 	if s.err != nil {
 		return nil, s.err
@@ -158,7 +178,7 @@ func TestOperationsGetOperation(t *testing.T) {
 
 func TestOperationsGetOperationError(t *testing.T) {
 	errCode := codes.PermissionDenied
-	mockOperations.err = grpc.Errorf(errCode, "test error")
+	mockOperations.err = gstatus.Error(errCode, "test error")
 
 	var name string = "name3373707"
 	var request = &longrunningpb.GetOperationRequest{
@@ -172,7 +192,9 @@ func TestOperationsGetOperationError(t *testing.T) {
 
 	resp, err := c.GetOperation(context.Background(), request)
 
-	if c := grpc.Code(err); c != errCode {
+	if st, ok := gstatus.FromError(err); !ok {
+		t.Errorf("got error %v, expected grpc error", err)
+	} else if c := st.Code(); c != errCode {
 		t.Errorf("got error code %q, want %q", c, errCode)
 	}
 	_ = resp
@@ -230,7 +252,7 @@ func TestOperationsListOperations(t *testing.T) {
 
 func TestOperationsListOperationsError(t *testing.T) {
 	errCode := codes.PermissionDenied
-	mockOperations.err = grpc.Errorf(errCode, "test error")
+	mockOperations.err = gstatus.Error(errCode, "test error")
 
 	var name string = "name3373707"
 	var filter string = "filter-1274492040"
@@ -246,7 +268,9 @@ func TestOperationsListOperationsError(t *testing.T) {
 
 	resp, err := c.ListOperations(context.Background(), request).Next()
 
-	if c := grpc.Code(err); c != errCode {
+	if st, ok := gstatus.FromError(err); !ok {
+		t.Errorf("got error %v, expected grpc error", err)
+	} else if c := st.Code(); c != errCode {
 		t.Errorf("got error code %q, want %q", c, errCode)
 	}
 	_ = resp
@@ -283,7 +307,7 @@ func TestOperationsCancelOperation(t *testing.T) {
 
 func TestOperationsCancelOperationError(t *testing.T) {
 	errCode := codes.PermissionDenied
-	mockOperations.err = grpc.Errorf(errCode, "test error")
+	mockOperations.err = gstatus.Error(errCode, "test error")
 
 	var name string = "name3373707"
 	var request = &longrunningpb.CancelOperationRequest{
@@ -297,7 +321,9 @@ func TestOperationsCancelOperationError(t *testing.T) {
 
 	err = c.CancelOperation(context.Background(), request)
 
-	if c := grpc.Code(err); c != errCode {
+	if st, ok := gstatus.FromError(err); !ok {
+		t.Errorf("got error %v, expected grpc error", err)
+	} else if c := st.Code(); c != errCode {
 		t.Errorf("got error code %q, want %q", c, errCode)
 	}
 }
@@ -333,7 +359,7 @@ func TestOperationsDeleteOperation(t *testing.T) {
 
 func TestOperationsDeleteOperationError(t *testing.T) {
 	errCode := codes.PermissionDenied
-	mockOperations.err = grpc.Errorf(errCode, "test error")
+	mockOperations.err = gstatus.Error(errCode, "test error")
 
 	var name string = "name3373707"
 	var request = &longrunningpb.DeleteOperationRequest{
@@ -347,7 +373,9 @@ func TestOperationsDeleteOperationError(t *testing.T) {
 
 	err = c.DeleteOperation(context.Background(), request)
 
-	if c := grpc.Code(err); c != errCode {
+	if st, ok := gstatus.FromError(err); !ok {
+		t.Errorf("got error %v, expected grpc error", err)
+	} else if c := st.Code(); c != errCode {
 		t.Errorf("got error code %q, want %q", c, errCode)
 	}
 }

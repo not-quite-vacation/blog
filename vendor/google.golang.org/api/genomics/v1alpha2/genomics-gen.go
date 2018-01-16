@@ -142,8 +142,8 @@ type ComputeEngine struct {
 }
 
 func (s *ComputeEngine) MarshalJSON() ([]byte, error) {
-	type noMethod ComputeEngine
-	raw := noMethod(*s)
+	type NoMethod ComputeEngine
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -191,8 +191,8 @@ type ControllerConfig struct {
 }
 
 func (s *ControllerConfig) MarshalJSON() ([]byte, error) {
-	type noMethod ControllerConfig
-	raw := noMethod(*s)
+	type NoMethod ControllerConfig
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -218,6 +218,15 @@ type Disk struct {
 	// parameters. Must be 1 - 63 characters.
 	// The name "boot" is reserved for system use.
 	Name string `json:"name,omitempty"`
+
+	// ReadOnly: Specifies how a sourced-base persistent disk will be
+	// mounted.
+	// See
+	// https://cloud.google.com/compute/docs/disks/persistent-disks#use_m
+	// ulti_instances
+	// for more details.
+	// Can only be set at create time.
+	ReadOnly bool `json:"readOnly,omitempty"`
 
 	// SizeGb: The size of the disk. Defaults to 500 (GB).
 	// This field is not applicable for local SSD.
@@ -268,8 +277,8 @@ type Disk struct {
 }
 
 func (s *Disk) MarshalJSON() ([]byte, error) {
-	type noMethod Disk
-	raw := noMethod(*s)
+	type NoMethod Disk
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -310,8 +319,8 @@ type DockerExecutor struct {
 }
 
 func (s *DockerExecutor) MarshalJSON() ([]byte, error) {
-	type noMethod DockerExecutor
-	raw := noMethod(*s)
+	type NoMethod DockerExecutor
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -331,63 +340,6 @@ type Empty struct {
 	// ServerResponse contains the HTTP response code and headers from the
 	// server.
 	googleapi.ServerResponse `json:"-"`
-}
-
-// ImportReadGroupSetsResponse: The read group set import response.
-type ImportReadGroupSetsResponse struct {
-	// ReadGroupSetIds: IDs of the read group sets that were created.
-	ReadGroupSetIds []string `json:"readGroupSetIds,omitempty"`
-
-	// ForceSendFields is a list of field names (e.g. "ReadGroupSetIds") to
-	// unconditionally include in API requests. By default, fields with
-	// empty values are omitted from API requests. However, any non-pointer,
-	// non-interface field appearing in ForceSendFields will be sent to the
-	// server regardless of whether the field is empty or not. This may be
-	// used to include empty fields in Patch requests.
-	ForceSendFields []string `json:"-"`
-
-	// NullFields is a list of field names (e.g. "ReadGroupSetIds") to
-	// include in API requests with the JSON null value. By default, fields
-	// with empty values are omitted from API requests. However, any field
-	// with an empty value appearing in NullFields will be sent to the
-	// server as null. It is an error if a field in this list has a
-	// non-empty value. This may be used to include null fields in Patch
-	// requests.
-	NullFields []string `json:"-"`
-}
-
-func (s *ImportReadGroupSetsResponse) MarshalJSON() ([]byte, error) {
-	type noMethod ImportReadGroupSetsResponse
-	raw := noMethod(*s)
-	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
-}
-
-// ImportVariantsResponse: The variant data import response.
-type ImportVariantsResponse struct {
-	// CallSetIds: IDs of the call sets created during the import.
-	CallSetIds []string `json:"callSetIds,omitempty"`
-
-	// ForceSendFields is a list of field names (e.g. "CallSetIds") to
-	// unconditionally include in API requests. By default, fields with
-	// empty values are omitted from API requests. However, any non-pointer,
-	// non-interface field appearing in ForceSendFields will be sent to the
-	// server regardless of whether the field is empty or not. This may be
-	// used to include empty fields in Patch requests.
-	ForceSendFields []string `json:"-"`
-
-	// NullFields is a list of field names (e.g. "CallSetIds") to include in
-	// API requests with the JSON null value. By default, fields with empty
-	// values are omitted from API requests. However, any field with an
-	// empty value appearing in NullFields will be sent to the server as
-	// null. It is an error if a field in this list has a non-empty value.
-	// This may be used to include null fields in Patch requests.
-	NullFields []string `json:"-"`
-}
-
-func (s *ImportVariantsResponse) MarshalJSON() ([]byte, error) {
-	type noMethod ImportVariantsResponse
-	raw := noMethod(*s)
-	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
 // ListOperationsResponse: The response message for
@@ -422,8 +374,8 @@ type ListOperationsResponse struct {
 }
 
 func (s *ListOperationsResponse) MarshalJSON() ([]byte, error) {
-	type noMethod ListOperationsResponse
-	raw := noMethod(*s)
+	type NoMethod ListOperationsResponse
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -464,8 +416,8 @@ type ListPipelinesResponse struct {
 }
 
 func (s *ListPipelinesResponse) MarshalJSON() ([]byte, error) {
-	type noMethod ListPipelinesResponse
-	raw := noMethod(*s)
+	type NoMethod ListPipelinesResponse
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -504,8 +456,8 @@ type LocalCopy struct {
 }
 
 func (s *LocalCopy) MarshalJSON() ([]byte, error) {
-	type noMethod LocalCopy
-	raw := noMethod(*s)
+	type NoMethod LocalCopy
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -541,8 +493,8 @@ type LoggingOptions struct {
 }
 
 func (s *LoggingOptions) MarshalJSON() ([]byte, error) {
-	type noMethod LoggingOptions
-	raw := noMethod(*s)
+	type NoMethod LoggingOptions
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -552,8 +504,8 @@ func (s *LoggingOptions) MarshalJSON() ([]byte, error) {
 type Operation struct {
 	// Done: If the value is `false`, it means the operation is still in
 	// progress.
-	// If true, the operation is completed, and either `error` or `response`
-	// is
+	// If `true`, the operation is completed, and either `error` or
+	// `response` is
 	// available.
 	Done bool `json:"done,omitempty"`
 
@@ -572,7 +524,7 @@ type Operation struct {
 
 	// Response: If importing ReadGroupSets, an ImportReadGroupSetsResponse
 	// is returned. If importing Variants, an ImportVariantsResponse is
-	// returned. For pipelines and exports, an empty response is returned.
+	// returned. For pipelines and exports, an Empty response is returned.
 	Response googleapi.RawMessage `json:"response,omitempty"`
 
 	// ServerResponse contains the HTTP response code and headers from the
@@ -597,8 +549,8 @@ type Operation struct {
 }
 
 func (s *Operation) MarshalJSON() ([]byte, error) {
-	type noMethod Operation
-	raw := noMethod(*s)
+	type NoMethod Operation
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -634,8 +586,8 @@ type OperationEvent struct {
 }
 
 func (s *OperationEvent) MarshalJSON() ([]byte, error) {
-	type noMethod OperationEvent
-	raw := noMethod(*s)
+	type NoMethod OperationEvent
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -699,8 +651,8 @@ type OperationMetadata struct {
 }
 
 func (s *OperationMetadata) MarshalJSON() ([]byte, error) {
-	type noMethod OperationMetadata
-	raw := noMethod(*s)
+	type NoMethod OperationMetadata
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -782,8 +734,8 @@ type Pipeline struct {
 }
 
 func (s *Pipeline) MarshalJSON() ([]byte, error) {
-	type noMethod Pipeline
-	raw := noMethod(*s)
+	type NoMethod Pipeline
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -943,13 +895,34 @@ type PipelineParameter struct {
 }
 
 func (s *PipelineParameter) MarshalJSON() ([]byte, error) {
-	type noMethod PipelineParameter
-	raw := noMethod(*s)
+	type NoMethod PipelineParameter
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
 // PipelineResources: The system resources for the pipeline run.
 type PipelineResources struct {
+	// AcceleratorCount: Optional. The number of accelerators of the
+	// specified type to attach.
+	// By specifying this parameter, you will download and install the
+	// following
+	// third-party software onto your managed Compute Engine
+	// instances:
+	// NVIDIA® Tesla® drivers and NVIDIA® CUDA toolkit.
+	AcceleratorCount int64 `json:"acceleratorCount,omitempty,string"`
+
+	// AcceleratorType: Optional. The Compute Engine defined accelerator
+	// type.
+	// By specifying this parameter, you will download and install the
+	// following
+	// third-party software onto your managed Compute Engine instances:
+	// NVIDIA®
+	// Tesla® drivers and NVIDIA® CUDA toolkit.
+	// Please see https://cloud.google.com/compute/docs/gpus/ for a list
+	// of
+	// available accelerator types.
+	AcceleratorType string `json:"acceleratorType,omitempty"`
+
 	// BootDiskSizeGb: The size of the boot disk. Defaults to 10 (GB).
 	BootDiskSizeGb int64 `json:"bootDiskSizeGb,omitempty"`
 
@@ -997,7 +970,7 @@ type PipelineResources struct {
 	// creation will restricted. If empty, any zone may be chosen.
 	Zones []string `json:"zones,omitempty"`
 
-	// ForceSendFields is a list of field names (e.g. "BootDiskSizeGb") to
+	// ForceSendFields is a list of field names (e.g. "AcceleratorCount") to
 	// unconditionally include in API requests. By default, fields with
 	// empty values are omitted from API requests. However, any non-pointer,
 	// non-interface field appearing in ForceSendFields will be sent to the
@@ -1005,7 +978,7 @@ type PipelineResources struct {
 	// used to include empty fields in Patch requests.
 	ForceSendFields []string `json:"-"`
 
-	// NullFields is a list of field names (e.g. "BootDiskSizeGb") to
+	// NullFields is a list of field names (e.g. "AcceleratorCount") to
 	// include in API requests with the JSON null value. By default, fields
 	// with empty values are omitted from API requests. However, any field
 	// with an empty value appearing in NullFields will be sent to the
@@ -1016,18 +989,18 @@ type PipelineResources struct {
 }
 
 func (s *PipelineResources) MarshalJSON() ([]byte, error) {
-	type noMethod PipelineResources
-	raw := noMethod(*s)
+	type NoMethod PipelineResources
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
 func (s *PipelineResources) UnmarshalJSON(data []byte) error {
-	type noMethod PipelineResources
+	type NoMethod PipelineResources
 	var s1 struct {
 		MinimumRamGb gensupport.JSONFloat64 `json:"minimumRamGb"`
-		*noMethod
+		*NoMethod
 	}
-	s1.noMethod = (*noMethod)(s)
+	s1.NoMethod = (*NoMethod)(s)
 	if err := json.Unmarshal(data, &s1); err != nil {
 		return err
 	}
@@ -1056,8 +1029,8 @@ type RepeatedString struct {
 }
 
 func (s *RepeatedString) MarshalJSON() ([]byte, error) {
-	type noMethod RepeatedString
-	raw := noMethod(*s)
+	type NoMethod RepeatedString
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -1154,8 +1127,8 @@ type RunPipelineArgs struct {
 }
 
 func (s *RunPipelineArgs) MarshalJSON() ([]byte, error) {
-	type noMethod RunPipelineArgs
-	raw := noMethod(*s)
+	type NoMethod RunPipelineArgs
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -1198,8 +1171,8 @@ type RunPipelineRequest struct {
 }
 
 func (s *RunPipelineRequest) MarshalJSON() ([]byte, error) {
-	type noMethod RunPipelineRequest
-	raw := noMethod(*s)
+	type NoMethod RunPipelineRequest
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -1230,8 +1203,8 @@ type RuntimeMetadata struct {
 }
 
 func (s *RuntimeMetadata) MarshalJSON() ([]byte, error) {
-	type noMethod RuntimeMetadata
-	raw := noMethod(*s)
+	type NoMethod RuntimeMetadata
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -1271,8 +1244,8 @@ type ServiceAccount struct {
 }
 
 func (s *ServiceAccount) MarshalJSON() ([]byte, error) {
-	type noMethod ServiceAccount
-	raw := noMethod(*s)
+	type NoMethod ServiceAccount
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -1462,8 +1435,8 @@ type SetOperationStatusRequest struct {
 }
 
 func (s *SetOperationStatusRequest) MarshalJSON() ([]byte, error) {
-	type noMethod SetOperationStatusRequest
-	raw := noMethod(*s)
+	type NoMethod SetOperationStatusRequest
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -1495,7 +1468,7 @@ func (s *SetOperationStatusRequest) MarshalJSON() ([]byte, error) {
 // arbitrary
 // information about the error. There is a predefined set of error
 // detail types
-// in the package `google.rpc` which can be used for common error
+// in the package `google.rpc` that can be used for common error
 // conditions.
 //
 // # Language mapping
@@ -1528,7 +1501,7 @@ func (s *SetOperationStatusRequest) MarshalJSON() ([]byte, error) {
 //
 // - Workflow errors. A typical workflow has multiple steps. Each step
 // may
-//     have a `Status` message for error reporting purpose.
+//     have a `Status` message for error reporting.
 //
 // - Batch operations. If a client uses batch request and batch
 // response, the
@@ -1551,9 +1524,9 @@ type Status struct {
 	// google.rpc.Code.
 	Code int64 `json:"code,omitempty"`
 
-	// Details: A list of messages that carry the error details.  There will
-	// be a
-	// common set of message types for APIs to use.
+	// Details: A list of messages that carry the error details.  There is a
+	// common set of
+	// message types for APIs to use.
 	Details []googleapi.RawMessage `json:"details,omitempty"`
 
 	// Message: A developer-facing error message, which should be in
@@ -1581,8 +1554,8 @@ type Status struct {
 }
 
 func (s *Status) MarshalJSON() ([]byte, error) {
-	type noMethod Status
-	raw := noMethod(*s)
+	type NoMethod Status
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -1614,8 +1587,8 @@ type TimestampEvent struct {
 }
 
 func (s *TimestampEvent) MarshalJSON() ([]byte, error) {
-	type noMethod TimestampEvent
-	raw := noMethod(*s)
+	type NoMethod TimestampEvent
+	raw := NoMethod(*s)
 	return gensupport.MarshalJSON(raw, s.ForceSendFields, s.NullFields)
 }
 
@@ -1723,7 +1696,7 @@ func (c *OperationsCancelCall) Do(opts ...googleapi.CallOption) (*Empty, error) 
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -1870,7 +1843,7 @@ func (c *OperationsGetCall) Do(opts ...googleapi.CallOption) (*Operation, error)
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -2053,7 +2026,7 @@ func (c *OperationsListCall) Do(opts ...googleapi.CallOption) (*ListOperationsRe
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -2072,7 +2045,7 @@ func (c *OperationsListCall) Do(opts ...googleapi.CallOption) (*ListOperationsRe
 	//       "type": "string"
 	//     },
 	//     "name": {
-	//       "description": "The name of the operation collection.",
+	//       "description": "The name of the operation's parent resource.",
 	//       "location": "path",
 	//       "pattern": "^operations$",
 	//       "required": true,
@@ -2225,7 +2198,7 @@ func (c *PipelinesCreateCall) Do(opts ...googleapi.CallOption) (*Pipeline, error
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -2346,7 +2319,7 @@ func (c *PipelinesDeleteCall) Do(opts ...googleapi.CallOption) (*Empty, error) {
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -2487,7 +2460,7 @@ func (c *PipelinesGetCall) Do(opts ...googleapi.CallOption) (*Pipeline, error) {
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -2636,7 +2609,7 @@ func (c *PipelinesGetControllerConfigCall) Do(opts ...googleapi.CallOption) (*Co
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -2808,7 +2781,7 @@ func (c *PipelinesListCall) Do(opts ...googleapi.CallOption) (*ListPipelinesResp
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -2982,7 +2955,7 @@ func (c *PipelinesRunCall) Do(opts ...googleapi.CallOption) (*Operation, error) 
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil
@@ -3108,7 +3081,7 @@ func (c *PipelinesSetOperationStatusCall) Do(opts ...googleapi.CallOption) (*Emp
 		},
 	}
 	target := &ret
-	if err := json.NewDecoder(res.Body).Decode(target); err != nil {
+	if err := gensupport.DecodeResponse(target, res); err != nil {
 		return nil, err
 	}
 	return ret, nil

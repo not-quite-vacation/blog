@@ -20,7 +20,6 @@ import (
 	"log"
 	"math/rand"
 	"os"
-	"reflect"
 	"sync"
 	"testing"
 	"time"
@@ -43,6 +42,7 @@ var logBuf bytes.Buffer
 // delivered to each subscription for the topic. It also tests that messages
 // are not unexpectedly redelivered.
 func TestEndToEnd(t *testing.T) {
+	t.Parallel()
 	if testing.Short() {
 		t.Skip("Integration tests skipped in short mode")
 	}
@@ -71,7 +71,10 @@ func TestEndToEnd(t *testing.T) {
 	// Two subscriptions to the same topic.
 	var subs [2]*Subscription
 	for i := 0; i < len(subs); i++ {
-		subs[i], err = client.CreateSubscription(ctx, fmt.Sprintf("%s-%d", subPrefix, i), topic, ackDeadline, nil)
+		subs[i], err = client.CreateSubscription(ctx, fmt.Sprintf("%s-%d", subPrefix, i), SubscriptionConfig{
+			Topic:       topic,
+			AckDeadline: ackDeadline,
+		})
 		if err != nil {
 			t.Fatalf("CreateSub error: %v", err)
 		}
@@ -79,6 +82,7 @@ func TestEndToEnd(t *testing.T) {
 	}
 
 	ids, err := publish(ctx, topic, nMessages)
+	topic.Stop()
 	if err != nil {
 		t.Fatalf("publish: %v", err)
 	}
@@ -142,7 +146,7 @@ loop:
 	wg.Wait()
 	ok := true
 	for i, con := range consumers {
-		if got, want := con.counts, wantCounts; !reflect.DeepEqual(got, want) {
+		if got, want := con.counts, wantCounts; !testutil.Equal(got, want) {
 			t.Errorf("%d: message counts: %v\n", i, diff(got, want))
 			ok = false
 		}

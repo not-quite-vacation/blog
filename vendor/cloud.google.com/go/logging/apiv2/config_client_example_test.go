@@ -1,4 +1,4 @@
-// Copyright 2017, Google Inc. All rights reserved.
+// Copyright 2017, Google LLC All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ package logging_test
 import (
 	"cloud.google.com/go/logging/apiv2"
 	"golang.org/x/net/context"
+	"google.golang.org/api/iterator"
 	loggingpb "google.golang.org/genproto/googleapis/logging/v2"
 )
 
@@ -45,9 +46,11 @@ func ExampleConfigClient_ListSinks() {
 	it := c.ListSinks(ctx, req)
 	for {
 		resp, err := it.Next()
+		if err == iterator.Done {
+			break
+		}
 		if err != nil {
 			// TODO: Handle error.
-			break
 		}
 		// TODO: Use resp.
 		_ = resp
@@ -119,6 +122,100 @@ func ExampleConfigClient_DeleteSink() {
 	// TODO: Fill request struct fields.
 	}
 	err = c.DeleteSink(ctx, req)
+	if err != nil {
+		// TODO: Handle error.
+	}
+}
+
+func ExampleConfigClient_ListExclusions() {
+	ctx := context.Background()
+	c, err := logging.NewConfigClient(ctx)
+	if err != nil {
+		// TODO: Handle error.
+	}
+
+	req := &loggingpb.ListExclusionsRequest{
+	// TODO: Fill request struct fields.
+	}
+	it := c.ListExclusions(ctx, req)
+	for {
+		resp, err := it.Next()
+		if err == iterator.Done {
+			break
+		}
+		if err != nil {
+			// TODO: Handle error.
+		}
+		// TODO: Use resp.
+		_ = resp
+	}
+}
+
+func ExampleConfigClient_GetExclusion() {
+	ctx := context.Background()
+	c, err := logging.NewConfigClient(ctx)
+	if err != nil {
+		// TODO: Handle error.
+	}
+
+	req := &loggingpb.GetExclusionRequest{
+	// TODO: Fill request struct fields.
+	}
+	resp, err := c.GetExclusion(ctx, req)
+	if err != nil {
+		// TODO: Handle error.
+	}
+	// TODO: Use resp.
+	_ = resp
+}
+
+func ExampleConfigClient_CreateExclusion() {
+	ctx := context.Background()
+	c, err := logging.NewConfigClient(ctx)
+	if err != nil {
+		// TODO: Handle error.
+	}
+
+	req := &loggingpb.CreateExclusionRequest{
+	// TODO: Fill request struct fields.
+	}
+	resp, err := c.CreateExclusion(ctx, req)
+	if err != nil {
+		// TODO: Handle error.
+	}
+	// TODO: Use resp.
+	_ = resp
+}
+
+func ExampleConfigClient_UpdateExclusion() {
+	ctx := context.Background()
+	c, err := logging.NewConfigClient(ctx)
+	if err != nil {
+		// TODO: Handle error.
+	}
+
+	req := &loggingpb.UpdateExclusionRequest{
+	// TODO: Fill request struct fields.
+	}
+	resp, err := c.UpdateExclusion(ctx, req)
+	if err != nil {
+		// TODO: Handle error.
+	}
+	// TODO: Use resp.
+	_ = resp
+}
+
+func ExampleConfigClient_DeleteExclusion() {
+	ctx := context.Background()
+	c, err := logging.NewConfigClient(ctx)
+	if err != nil {
+		// TODO: Handle error.
+	}
+
+	req := &loggingpb.DeleteExclusionRequest{
+	// TODO: Fill request struct fields.
+	}
+	err = c.DeleteExclusion(ctx, req)
 	if err != nil {
 		// TODO: Handle error.
 	}
