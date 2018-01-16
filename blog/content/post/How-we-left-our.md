@@ -2,10 +2,12 @@
 date = "2017-05-17T20:01:16-07:00"
 title = "How we left our stuff and took off from Seattle to England"
 author = "Vicki"
-featured_image = "/img/IMG_0057.jpg"
+featured_image = "/img/seeya.jpg"
 +++
 
-Once you made up your mind on traveling, the logistics seems easy. <!--more-->
+Once you made up your mind on traveling, the rest is easy. <!--more-->
+
+![Us in Space](/img/seeya.jpg)
 
 ![Our luggage to start](/img/IMG_0057.jpg)
 

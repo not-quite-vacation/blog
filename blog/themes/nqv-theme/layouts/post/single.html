@@ -1,5 +1,11 @@
 {{ partial "header.html" . }}
 {{ partial "sub-header.html" . }}
+<main class="main">
+		<div id="logocountup">
+			<div id="logo">
+				<img src="/img/logo.png">
+			</div>
+		</div>
 	<h1>{{ .Title }}</h1>
 	<h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
 	{{ .Content }}

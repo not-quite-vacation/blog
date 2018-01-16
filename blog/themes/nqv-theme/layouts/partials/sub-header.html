@@ -1,9 +1,28 @@
 <header class="header">
   <nav class="nav">
     <ul>
-      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-    {{ with .Site.GetPage "section" "post" }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end}}
+      <li>
+        <a class="text" href="{{ .Site.BaseURL }}">Home</a>
+      </li>
+      {{ with .Site.GetPage "section" "post" }}
+      <li>
+        <a class="text" href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>{{ end}}
+      <li>
+        <a class="icon" target="_blank" href="https://www.facebook.com/notquitevacation/">
+          <img src="/img/facebook.png" />
+        </a>
+      </li>
+      <li>
+          <a class="icon" target="_blank" href="https://www.instagram.com/notquitevacation/">
+            <img src="/img/ig.png" />
+          </a>
+      </li>
+      <li>
+          <a class="icon" target="_blank" href="https://www.youtube.com/channel/UCX6BMwx1R8TBvGl_is84PXw/">
+            <img src="/img/youtube.png" />
+          </a>
+      </li>
+    </ul>
   </nav>
 </header>
-<div id="logo"><img src="/img/logo.png"></div>
-<main class="main">
