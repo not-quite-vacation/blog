@@ -46,6 +46,8 @@ After a long day riding in the mountains. We arrived at a tiny town called Llanf
 
 ![view](/img/IMG_0499.JPG/)
 
+![Beautiful](/img/DSC_1252.NEF.jpg/)
+
 ### Llangadog
 
 After Brecon, we kept riding west. Llangadog is just a little outside of the Brecon Beacons national park. When we arrived, we had to ask three inns before finding a free room to stay. Turns out there was a tracker parade. We had a blast and enjoyed the small town vive. 
