@@ -20,7 +20,8 @@ Gorgeous old castle that had 0 tourist. I liked it a lot. We played around with 
 
 ![jumping](/img/DSC_0538-ANIMATION.gif/)
 
-First time cooking with our cook gears - we stopped at a gas station to get some gas for cooking. What happened next was probably the most dangerous moment of our trip. Andrew was trying to fill our bottle with gas, but he underestimated the pressure of the pump. So the gas shoot right out and splashed all over us. I screamed and ran away. We both felt like we died a little that day. Luckily it was pouring rain, so we were able to wash a bit off riding home. 
+### First time cooking with our cook gears 
+We stopped at a gas station to get some gas for cooking. What happened next was probably the most dangerous moment of our trip. Andrew was trying to fill our bottle with gas, but he underestimated the pressure of the pump. So the gas shoot right out and splashed all over us. I screamed and ran away. We both felt like we died a little that day. Luckily it was pouring rain, so we were able to wash a bit off riding home. 
 
 ![our meal](/img/IMG_0258.JPG/)
 
