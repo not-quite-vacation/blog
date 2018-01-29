@@ -5,9 +5,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	_ "image/gif"
-	_ "image/jpeg"
-	_ "image/png"
 	"io"
 	"log"
 	"os"
