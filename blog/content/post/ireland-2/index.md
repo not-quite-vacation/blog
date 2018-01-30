@@ -1,5 +1,5 @@
 ---
-date: "2017-06-10T18:56:40-08:00"
+date: "2017-06-10T18:56:40-08:00" #test
 title: "Ireland - Old Tomb, Crookhaven and Mizen Head"
 author: "Vicki"
 featured_image: "/post/ireland-2/images/600x600_DSC_1456.NEF.jpg"
@@ -11,7 +11,7 @@ After riding out of Kinsale we rode through Glandore. It's a tiny fishing villag
 
 ![Glandore](images/600x600_DSC_1420.NEF.jpg)
 
-Andrew cooked our dinner - White rice, curry paste and pepperoni. All tasted amazing with the wine.  Then we went to bed. The whole night the tent was rocking and I thought for sure we were going to fly at one point…but those REI tents are amazing! We were able to pull it through the night and survived camping in the wild storm of Ireland. I still feel super badass about it. 
+Andrew cooked our dinner - White rice, curry paste and pepperoni. All tasted amazing with the wine.  Then we went to bed. The whole night the tent was rocking and I thought for sure we were going to fly at one point…but those REI tents are amazing! We were able to pull it through the night and have survived camping in the wild storm of Ireland. I still feel super badass about it. 
 
 ![dinner](images/600x600_IMG_0691.jpg)
 
@@ -48,4 +48,5 @@ The most west south of Ireland
 
 Andrew cooking dinner
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XADeioghotU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/XADeioghotU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
