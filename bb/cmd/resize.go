@@ -19,7 +19,6 @@ import (
 	"io"
 	"log"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"regexp"
 	"strings"
@@ -141,7 +140,7 @@ func (b *backupResizeImage) resize(path string, maxWidth, maxHeight int) {
 		return
 	}
 	dimensions := fmt.Sprintf("%dx%d>", maxWidth, maxHeight)
-	cmd := exec.Command("convert", path, "-resize", dimensions, "-quality", "85", "-interlace", "Line", path)
+	cmd := convertCommand(path, dimensions)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	b.err = cmd.Run()
