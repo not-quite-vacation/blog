@@ -127,10 +127,13 @@ body {
 
 @media(min-width: 800px) {
     .main {
-        width: 600px;
         margin: auto;
+        width: 604px;
         overflow: initial;
         font-size: 24px;
+    }
+    .main .postSummary {
+        margin: 0;
     }
     body {
         font-size: 24px;
@@ -148,6 +151,23 @@ body {
             flex: 1;
             width: 100%;
             max-width: 100%; }
+}
+@media(min-width: 1224px) {
+    .main{
+        margin: auto;
+        width: 1224px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+    .main .postSummary {
+        margin: 0;
+    }
+    .main h1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 
 .main p img {
@@ -170,6 +190,10 @@ h2 {
 }
 .main footer {
     margin:16px;
+}
+
+header {
+    z-index: 5;
 }
 .nav .navItem {
     padding: 16px 16px 0 16px;
@@ -216,8 +240,8 @@ a:visited {
 .postSummary {
     margin: 0px 16px 16px 16px;
     border-radius: 2px;
-    max-width: 600px;
-    border: groove;
+    max-width: 604px;
+    border: 2px solid black;
 }
 
 .postSummaryHeader {
@@ -243,13 +267,24 @@ a:visited {
 }
 
 #banner {
+  position: relative;
   width: 100vw;
-  z-index: 0;
   overflow: hidden;
   margin-left: calc(-1 * ((100vw - 98%) / 2));}
   #banner > img {
       width: 2800px;
       margin-left: calc(-1 * (2800px - 100%) / 2);}
+  #banner > p {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 40%;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    text-align: center;
+    margin: 0;
+  }
 
 /* below is potentially wrong */
 #bubble h1{
@@ -292,14 +327,14 @@ a:visited {
     font-weight: 100;
   }
 
-  #logocountup {
+#logocountup {
+    margin: auto;
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap; }
-    #logocountup #bubble {
-        flex: 1 0 auto;
-        /* padding-left: 24px; */
-    }
-     #logocountup #logo {
-        flex: 1 0 auto;
-        max-width: 100%; }
+#logocountup #bubble {
+    flex: 1 0 auto;
+    /* padding-left: 24px; */}
+    #logocountup #logo {
+    flex: 1 0 auto;
+    max-width: 100%; }

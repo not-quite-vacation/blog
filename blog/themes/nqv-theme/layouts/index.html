@@ -1,54 +1,45 @@
 {{ partial "header.html" . }} {{ partial "sub-header.html" . }}
 
-<main class="main">
-  <div id="logocountup">
-    <div id="logo">
-      <img src="/img/logo.png">
-    </div>
-    <div id="bubble">
-      <h1>My human slave has left me with his Mom</h1>
-      <div id="clockdiv">
-        <div>
-          <span class="time days"></span>
-          <span class="smalltext">days</span>
-        </div>
-        <div>
-          <span class="time hours"></span>
-          <span class="smalltext">h</span>
-        </div>
-        <div>
-          <span class="time minutes"></span>
-          <span class="smalltext">min</span>
-        </div>
-        <div>
-          <span class="time seconds"></span>
-          <span class="smalltext">sec</span>
-        </div>
-      </div>
-      <h1>ago and has visited 13 countries on their bikes</h1>
-      <h1> WHAT EVER </h>
-    </div>
+<div id="logocountup">
+  <div id="logo">
+    <img src="/img/logo.png">
   </div>
-
-  <article>
-    <div id="banner">
-      <img class="bg" src="/img/homephoto.jpg">
-    </div>
-  </article>
-
-  <article id="about">
-    <div class="aboutContainer">
-      <div class="img">
-        <img src="/img/about.png">
+  <div id="bubble">
+    <h1>My human slave has left me with his Mom</h1>
+    <div id="clockdiv">
+      <div>
+        <span class="time days"></span>
+        <span class="smalltext">days</span>
       </div>
-      <div class="text">
-        <h1> About </h1>
-        <p>Hi! It's Andrew and Vicki. We are two big kids who are traveling the world with our bikes! This blog is to keep
-          Oscar (our cat) posted. </p>
-        <div>
-        </div>
-  </article>
+      <div>
+        <span class="time hours"></span>
+        <span class="smalltext">h</span>
+      </div>
+      <div>
+        <span class="time minutes"></span>
+        <span class="smalltext">min</span>
+      </div>
+      <div>
+        <span class="time seconds"></span>
+        <span class="smalltext">sec</span>
+      </div>
+    </div>
+    <h1>ago and has visited 13 countries on their bikes</h1>
+    <h1> WHAT EVER </h>
+  </div>
+</div>
+<article>
+  <div id="banner">
+    <img class="bg" src="/img/homephoto.jpg">
+    <p>
+      Hi! It's Andrew and Vicki. We are two big kids who are traveling
+      the world with our bikes! This blog is to keep Oscar (our cat)
+      posted.
+    </p>
+  </div>
+</article>
 
+<main class="main">
   <h1>Recent Posts</h1>
   {{- range first 10 .Data.Pages -}} {{- if eq .Type "post" }}
   <article class="postSummary">
