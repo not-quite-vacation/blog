@@ -5,7 +5,7 @@
     <img src="/img/logo.png">
   </div>
   <div id="bubble">
-    <h1>My human slave has left me with his Mom</h1>
+    <p>My human slave has left me with his Mom</p>
     <div id="clockdiv">
       <div>
         <span class="time days"></span>
@@ -13,19 +13,19 @@
       </div>
       <div>
         <span class="time hours"></span>
-        <span class="smalltext">h</span>
+        <span class="smalltext">hours</span>
       </div>
       <div>
         <span class="time minutes"></span>
-        <span class="smalltext">min</span>
+        <span class="smalltext">mins</span>
       </div>
       <div>
         <span class="time seconds"></span>
-        <span class="smalltext">sec</span>
+        <span class="smalltext">secs</span>
       </div>
     </div>
-    <h1>ago and has visited 13 countries on their bikes</h1>
-    <h1> WHAT EVER </h>
+    <p>ago and has visited 13 countries on their bikes</p>
+    <p> WHAT EVER </p>
   </div>
 </div>
 
@@ -58,54 +58,76 @@
     </footer>
   </article>
   {{- end -}} {{- end }}
-  <h2>Pages</h2>
-  {{- range first 10 .Data.Pages -}} {{- if eq .Type "page" }}
-  <h4>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </h4>
-  {{- end -}} {{- end }}
-  <script>
-    function getTimeRemaining(endtime) {
-      var t = Date.parse(new Date()) - Date.parse(endtime);
-      var seconds = Math.floor((t / 1000) % 60);
-      var minutes = Math.floor((t / 1000 / 60) % 60);
-      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-      var days = Math.floor(t / (1000 * 60 * 60 * 24));
-      return {
-        'total': t,
-        'days': days,
-        'hours': hours,
-        'minutes': minutes,
-        'seconds': seconds
-      };
-    }
-
-    function initializeClock(id, endtime) {
-      var clock = document.getElementById(id);
-      var daysSpan = clock.querySelector('.days');
-      var hoursSpan = clock.querySelector('.hours');
-      var minutesSpan = clock.querySelector('.minutes');
-      var secondsSpan = clock.querySelector('.seconds');
-
-      function updateClock() {
-        var t = getTimeRemaining(endtime);
-
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-        if (t.total <= 0) {
-          clearInterval(timeinterval);
-        }
+</main>
+<h2>Pages</h2>
+<nav>
+  <ul>
+    {{- range first 10 .Site.Sections -}}
+    <li>
+      <a href="{{.RelPermalink}}">{{.Title}}</a>
+    </li>{{- end }}
+  </ul>
+</nav>
+<script>
+  function requestInterval(fn, delay) {
+    var start = new Date().getTime(),
+      handle = new(Object);
+    function loop() {
+      var current = new Date().getTime(),
+        delta = current - start;
+      if (delta >= delay) {
+        fn.call();
+        start = new Date().getTime();
       }
+      handle.value = requestAnimationFrame(loop);
+    };
+    handle.value = requestAnimationFrame(loop);
+    return handle;
+  }
+  function clearRequestInterval(handle) {
+    cancelAnimationFrame(handle.value);
+  }
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(new Date()) - Date.parse(endtime);
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
 
-      updateClock();
-      var timeinterval = setInterval(updateClock, 1000);
+  function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    var daysSpan = clock.querySelector('.days');
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');
+
+    function updateClock() {
+      var t = getTimeRemaining(endtime);
+
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+      if (t.total <= 0) {
+        clearRequestInterval(timeinterval);
+      }
     }
 
-    var deadline = '2017-05-17';
-    initializeClock('clockdiv', deadline);
+    updateClock();
+    var timeinterval = requestInterval(updateClock, 1000);
+  }
+
+  var deadline = '2017-05-17';
+  initializeClock('clockdiv', deadline);
 
 
-  </script> {{ partial "footer.html" . }}
+</script> {{ partial "footer.html" . }}

@@ -15,12 +15,6 @@ html, body {
 }
 
 body {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
   background: #fcfcfc;
 }
 
@@ -58,7 +52,7 @@ body {
     .header nav ul li {
     height: 100%; }
     .header nav ul li .text {
-      padding: 14px 8px 0 8px;
+      padding: 10px 8px 0 8px;
       display: block;
       height: 100%; }
     .header nav ul li .icon {
@@ -72,10 +66,7 @@ body {
       height:100%;
     }
 
-#logo {
-  margin-bottom: 20px;
-}
-  #logo > img {
+#logo > img {
   margin: auto;
   display: block;
   max-width: 100%;
@@ -84,7 +75,7 @@ body {
 
 .main {
   width: 100%;
-  margin: 0 16px 16px 16px;
+  margin: 0;
 }
 
 .main article img {
@@ -107,13 +98,18 @@ body {
   max-width: 100%;
   }
 
-@media(min-width: 600px) {
+@media(min-width: 636px) {
   body {
     font-size: 24px;
   }
   .main {
+    margin: auto;
+    width: 604px;
     font-size: 24px;
   }
+    .main .postSummary {
+      margin: 0 0 16px 0;
+    }
   #ytplayer {
     width: 560px;
     height: 315px;
@@ -121,7 +117,6 @@ body {
   .aboutContainer .text {
     flex: 1;
   }
-
   .aboutContainer .img {
     flex: 1;
   }
@@ -129,12 +124,7 @@ body {
 
 @media(min-width: 800px) {
   .main {
-    margin: auto;
-    width: 604px;
     overflow: initial;
-  }
-  .main .postSummary {
-    margin: 0 0 16px 0;
   }
 }
 @media(min-width: 1240px) {
@@ -164,9 +154,7 @@ body {
   text-align: center;
   line-height: normal;
 }
-h2 {
-  margin:0px;
-}
+
 .header-title {
   flex: 1;
   font-size: 20px;
@@ -222,7 +210,7 @@ a:visited {
 }
 
 .postSummary {
-  margin: 0px 16px 16px 16px;
+  margin: 0 16px 16px 16px;
   border-radius: 2px;
   max-width: 604px;
   border: 2px solid black;
@@ -279,7 +267,6 @@ a:visited {
   }
 
   #bubble #clockdiv{
-      font-family: sans-serif;
       display: inline-block;
       font-weight: bold;
       text-align: center;
@@ -307,19 +294,18 @@ a:visited {
   }
 
   #bubble{
-      text-align: center;
-    font-family: sans-serif;
+    text-align: center;
     font-weight: 100;
   }
 
 #logocountup {
-    margin: auto;
-    padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap; }
-#logocountup #bubble {
-    flex: 1 0 auto;
-    /* padding-left: 24px; */}
-    #logocountup #logo {
-    flex: 1 0 auto;
-    max-width: 100%; }
+  margin: auto;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#logocountup>* {
+  margin: 0 0 0 16px;
+}
