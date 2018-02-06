@@ -3,8 +3,10 @@
     <ul>
       <li>
         <a class="text" href="{{ .Site.BaseURL }}">Home</a>
-      </li>
-      {{ with .Site.GetPage "section" "post" }}
+      </li> {{ with .Site.GetPage "section" "post" }}
+      <li>
+        <a class="text" href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>{{ end}} {{ with .Site.GetPage "page" "about.md" }}
       <li>
         <a class="text" href="{{ .Permalink }}">{{ .Title }}</a>
       </li>{{ end}}
@@ -14,14 +16,14 @@
         </a>
       </li>
       <li>
-          <a class="icon" target="_blank" href="https://www.instagram.com/notquitevacation/">
-            <img src="/img/40x40_ig.png" />
-          </a>
+        <a class="icon" target="_blank" href="https://www.instagram.com/notquitevacation/">
+          <img src="/img/40x40_ig.png" />
+        </a>
       </li>
       <li>
-          <a class="icon" target="_blank" href="https://www.youtube.com/channel/UCX6BMwx1R8TBvGl_is84PXw/">
-            <img src="/img/40x40_youtube.png" />
-          </a>
+        <a class="icon" target="_blank" href="https://www.youtube.com/channel/UCX6BMwx1R8TBvGl_is84PXw/">
+          <img src="/img/40x40_youtube.png" />
+        </a>
       </li>
     </ul>
   </nav>

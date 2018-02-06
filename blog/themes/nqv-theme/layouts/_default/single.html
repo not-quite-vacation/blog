@@ -1,11 +1,12 @@
-{{ partial "header.html" . }}
-<main class="main">
-		<div id="logocountup">
-			<div id="logo">
-				<img src="/img/logo.png">
-			</div>
+{{ partial "header.html" . }} {{ partial "sub-header.html" . }}
+<main class="main main-single">
+	<div id="logocountup">
+		<div id="logo">
+			<img src="/img/logo.png">
 		</div>
-		<h1>
-			{{ .Title }}
-		</h1>
-	{{ .Content }} {{ partial "footer.html" . }}
+	</div>
+	<h1>
+		{{ .Title }}
+	</h1>
+	{{ .Content }}
+</main>{{ partial "footer.html" . }}

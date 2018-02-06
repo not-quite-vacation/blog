@@ -86,17 +86,16 @@ body {
 .aboutContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
   .aboutContainer .text {
-  width: 100%;
-  padding-left: 24px;
+    width: 100%;
   }
-  .aboutContainer .text h1 {
-    text-align: center;
+  .aboutContainer .text p {
+    margin: 0;
   }
   .aboutContainer .img {
-  width: 100%;
-  max-width: 100%;
+    max-width: 100%;
   }
 
 @media(min-width: 536px) {
@@ -109,6 +108,10 @@ body {
     width: 504px;
     font-size: 24px;
   }
+  .main.main-single {
+    width: 100%;
+    padding: 0 16px 0 16px;
+  }
     .main .postSummary {
       margin: 0 0 16px 0;
     }
@@ -118,12 +121,18 @@ body {
   }
   .aboutContainer .text {
     flex: 1;
+    padding-left: 24px;
   }
   .aboutContainer .img {
     flex: 1;
   }
 }
-
+@media(min-width: 636px) {
+  .main.main-single {
+    width: 604px;
+    padding: 0;
+  }
+}
 @media(min-width: 1046px) {
   .main{
     overflow: initial;
