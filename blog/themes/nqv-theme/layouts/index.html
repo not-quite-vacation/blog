@@ -59,15 +59,6 @@
   </article>
   {{- end -}} {{- end }}
 </main>
-<h2>Pages</h2>
-<nav>
-  <ul>
-    {{- range first 10 .Site.Sections -}}
-    <li>
-      <a href="{{.RelPermalink}}">{{.Title}}</a>
-    </li>{{- end }}
-  </ul>
-</nav>
 <script>
   function requestInterval(fn, delay) {
     var start = new Date().getTime(),

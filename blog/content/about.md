@@ -10,14 +10,23 @@ date = "2017-02-20T15:31:29-08:00"
       <img src="/img/about.png">
     </div>
     <div class="text">
-      <h1> About </h1>
       <p>Hi! It's Andrew and Vicki. We are two big kids who are traveling the world with our bikes! This blog is to keep
         Oscar (our cat) posted. </p>
       <div>
       </div>
 </section>
 
-Some info about our site. This is really important to understand.  If you don't
-follow, it won't make sense.
+We left our jobs in Seattle and have started traveling on our bikes
+since May 2017.
+
+We are not sure what this blog is exactly for yet. Maybe just to make
+Oscar jealous. 
+
+So far, we have been to…
 
 ![Places](/img/country.png)
+
+And I think Andrew and I would agree, that this is how we felt when we
+decided to quit and go travel the world. 
+
+![AndrewPsy](/img/andrew-psy.png)
