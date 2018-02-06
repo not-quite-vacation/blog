@@ -2,7 +2,7 @@
 date = "2017-05-04T20:01:16-07:00"
 title = "How I decided to quit my job and go travel"
 author = "Vicki"
-featured_image = "/img/Whynot.png"
+featured_image = "/img/vicki-mitty.gif"
 +++
 
 It's all because of the song space oddity and Walter Mitty jumping on to the

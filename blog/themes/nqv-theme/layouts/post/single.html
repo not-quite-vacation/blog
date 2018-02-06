@@ -9,5 +9,12 @@
 	<h1>{{ .Title }}</h1>
 	<h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
 	{{ .Content }}
+	<h2>Share this on </h2>
+	<a href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" target="_blank">
+        <img src="/img/50x50_facebook.png" alt="Facebook" />
+	</a>
+	  <a href="https://twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;hashtags=notquitevacation" target="_blank">
+        <img src="/img/50x50_twitter.png" alt="Twitter" />
+    </a>
 	{{ template "_internal/disqus.html" . }}
 {{ partial "footer.html" .  }}
