@@ -1,10 +1,10 @@
 {{ partial "header.html" . }} {{ partial "sub-header.html" . }}
-<main class="main main-single">
-	<div id="logocountup">
-		<div id="logo">
-			<img src="/img/logo.png">
-		</div>
+<div id="logocountup">
+	<div id="logo">
+		<a href="{{ .Site.BaseURL }}"><img src="/img/logo.png"></a>
 	</div>
+</div>
+<main class="main main-single">
 	<h1>
 		{{ .Title }}
 	</h1>

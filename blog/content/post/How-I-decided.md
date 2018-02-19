@@ -10,7 +10,7 @@ helicopter.<!--more-->
 
 ![quit my job to travel on my bike](/img/Whynot.png)
 
-<iframe id="ytplayer" src="https://www.youtube.com/embed/HEwtPwkeXjw" frameborder="0" allowfullscreen></iframe>
+{{< youtube HEwtPwkeXjw >}}
 
 I love this scene. It is so easy and so hard the same time to take a leap of faith and jump right on to a helicopter. 
 

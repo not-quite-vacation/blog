@@ -66,6 +66,11 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.Handle("/", http.FileServer(blog.FS(false)))
+	mux.Handle("notquitevaction.com/", http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
+		w.Header().Set("Connection", "close")
+		url := "https://www" + req.Host + req.URL.String()
+		http.Redirect(w, req, url, http.StatusMovedPermanently)
+	}))
 
 	srv := http.Server{
 		Handler:      mux,
