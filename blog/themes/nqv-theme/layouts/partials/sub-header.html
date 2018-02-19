@@ -1,9 +1,17 @@
 <header class="header">
+  <div class="nqv">
+    <a href="{{ .Site.BaseURL }}"><img src="/img/logo.png"></a>
+    <h1><a href="{{ .Site.BaseURL }}">Not Quite Vacation</a></h1>
+  </div>
+  <div class="hamburger">
+    <button onclick="navToggle()">
+        <svg id="i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" />
+      </svg>
+    </button>
+  </div>
   <nav class="nav">
-    <ul>
-      <li>
-        <a class="text" href="{{ .Site.BaseURL }}">Home</a>
-      </li> {{ with .Site.GetPage "section" "post" }}
+    <ul> {{ with .Site.GetPage "section" "post" }}
       <li>
         <a class="text" href="{{ .Permalink }}">{{ .Title }}</a>
       </li>{{ end}} {{ with .Site.GetPage "page" "about.md" }}
