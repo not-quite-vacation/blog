@@ -52,14 +52,23 @@ body {
   .header > .nqv > h1 {
     display: inline-block;
     font-size: 24px;
+    line-height: 36px;
     margin: 0;
     padding: 10px 8px 0 8px;
     height: 100%;
   }
   .header > .hamburger > button {
-    border: none;
+    -webkit-appearance: button;
+    border: 0;
     background-color: transparent;
-    padding: 12px 0 0 0;
+    padding: 12px 0 0 12px;
+  }
+  .header > .hamburger > button:focus {
+    outline: 0;
+  }
+  .header > .hamburger > button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
   }
   .header nav {
     grid-column-start: 1;
@@ -143,10 +152,6 @@ body {
     .main .postSummary {
       margin: 0 0 16px 0;
     }
-  #ytplayer {
-    width: 560px;
-    height: 315px;
-  }
   .aboutContainer .text {
     flex: 1;
     padding-left: 24px;
