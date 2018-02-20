@@ -1,0 +1,35 @@
+{{ partial "header.html" . }} {{ partial "sub-header.html" . }}
+<div id="logocountup">
+	<div id="logo">
+		<a href="{{ .Site.BaseURL }}"><img src="/img/logo.png"></a>
+	</div>
+</div>
+
+<main class="main main-list main-post">
+    <h1>Posts</h1>
+    <table>
+        <colgroup>
+            <col span=1 style="width: 35%;">
+            <col span=1 style="width: 20%;">
+            <col span=1 style="width: 20%;">
+            <col span=1 style="width: 25%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Release Date</th>
+                <th>Trip Date</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{- range first 10 .Data.Pages }}
+            <tr>
+                <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+                <td align="center">{{ .PublishDate.Format "Jan 2, 2006" }}</td>
+                <td align="center">{{ with .Params.trip_date }}{{ dateFormat "Jan 2, 2006" . }}{{ end }}</td>
+                <td>{{ .Params.Author }}</td>
+            </tr> {{- end }}
+        </tbody>
+    </table>
+</main> {{ partial "footer.html" . -}}
