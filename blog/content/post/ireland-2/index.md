@@ -48,5 +48,4 @@ The most west south of Ireland
 
 Andrew cooking dinner
 
-<iframe src="https://www.youtube.com/embed/XADeioghotU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+{{< youtube XADeioghotU >}}

@@ -1,13 +1,14 @@
 {{ partial "header.html" . }} {{ partial "sub-header.html" . }}
-<main class="main main-list">
-	<div id="logocountup">
-		<div id="logo">
-			<img src="/img/logo.png">
-		</div>
+<div id="logocountup">
+	<div id="logo">
+		<a href="{{ .Site.BaseURL }}"><img src="/img/logo.png"></a>
 	</div>
+</div>
+
+<main class="main main-list">
 	<h1>Articles</h1>
 	{{- range first 10 .Data.Pages }}
 	<h4>
 		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	</h4>
-	{{- end }} {{ partial "footer.html" . -}}
+	</h4> {{- end }}
+</main> {{ partial "footer.html" . -}}

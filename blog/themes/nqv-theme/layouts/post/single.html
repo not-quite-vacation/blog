@@ -2,13 +2,14 @@
 {{ partial "sub-header.html" . }}
 <div id="logocountup">
 	<div id="logo">
-		<img src="/img/logo.png">
+		<a href="{{ .Site.BaseURL }}"><img src="/img/logo.png"></a>
 	</div>
 </div>
 <main class="main main-single">
 	<h1>{{ .Title }}</h1>
-	<h6>{{ .Date.Format "Mon, Jan 2, 2006" }}</h6>
+	<h6>{{ .PublishDate.Format "Mon, Jan 2, 2006" }}</h6>
 	{{ .Content }}
+	{{ with .Params.trip_date }}<h6>Day on our trip {{ dateFormat "Jan 02, 2006" . }}</h6>{{ end }}
 	<h2>Share this on </h2>
 	<a href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" target="_blank">
         <img src="/img/50x50_facebook.png" alt="Facebook" />
