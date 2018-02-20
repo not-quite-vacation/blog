@@ -29,4 +29,4 @@ So far, we have been to…
 And I think Andrew and I would agree, that this is how we felt when we
 decided to quit and go travel the world. 
 
-![AndrewPsy](/img/andrew-psy.png)
+![AndrewPsy](/img/andrew-psy.gif)

@@ -23,7 +23,7 @@
             </tr>
         </thead>
         <tbody>
-            {{- range first 10 .Data.Pages }}
+            {{- range sort .Data.Pages "PublishDate" "desc" }}
             <tr>
                 <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
                 <td align="center">{{ .PublishDate.Format "Jan 2, 2006" }}</td>

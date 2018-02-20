@@ -40,7 +40,7 @@
 
 <main class="main main-list">
   <h1>Recent Posts</h1>
-  {{- range sort .Data.Pages "PublishDate" "desc" -}} {{- if eq .Type "post" }}
+  {{- range sort .Data.Pages "PublishDate" "desc" | first 6 -}} {{- if eq .Type "post" }}
   <article class="postSummary">
     <header>
       <h2 class="postSummaryHeader title">
