@@ -2,14 +2,14 @@
 date = "2017-05-04T20:01:16-07:00"
 title = "How I decided to quit my job and go travel"
 author = "Vicki"
-featured_image = "/img/vicki-mitty.gif"
+featured_image = "/post/how-i-decided/images/vicki-mitty.gif"
 publishdate = "2018-02-20"
 +++
 
 It's all because of the song space oddity and Walter Mitty jumping on to the
 helicopter.<!--more-->
 
-![quit my job to travel on my bike](/img/Whynot.png)
+![quit my job to travel on my bike](images/Whynot.png)
 
 {{< youtube HEwtPwkeXjw >}}
 
@@ -25,4 +25,4 @@ time seeing the world and doing absolutely nothing!
 ### Here's me jumping on to a helicopter like Walter Mitty.
 
 
-![Vicki Jumping on to the helicopter](/img/vicki-mitty.gif)
+![Vicki Jumping on to the helicopter](images/vicki-mitty.gif)

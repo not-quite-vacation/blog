@@ -2,7 +2,7 @@
 date = "2017-02-02T18:56:40-08:00"
 title = "Not Quite Camping"
 author = "Vicki"
-featured_image = "/img/20170129_085202_HDR.jpg"
+featured_image = "/post/first-post/images/20170129_085202_HDR.jpg"
 publishdate = "2018-02-20"
 trip_date = "2017-02-02"
 +++
@@ -10,7 +10,7 @@ trip_date = "2017-02-02"
 After deciding to quit our job and go travel, the first thing that needed to be
 done is go camping…because I have never been camping.<!--more-->
 
-![Camping at the beach. not quite romantic](/img/20170129_085202_HDR.jpg)
+![Camping at the beach. not quite romantic](images/20170129_085202_HDR.jpg)
 
 I picked out a campground close to Seattle -  Fay Bainbridge Park (4 miles
 biking - 30 min ferry - 6 miles biking  from home - PIECE OF cake! For me at
@@ -71,4 +71,4 @@ Anyway.
 "I am capable of biking 10 miles and camping outside in the cold!" 
 
 
-![Eating Subway and Beer.](/img/20170128_181555.jpg)
+![Eating Subway and Beer.](images/20170128_181555.jpg)

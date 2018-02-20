@@ -2,7 +2,7 @@
 title = "It Is Easy"
 date = 2018-01-17T16:16:53+08:00
 author = "Vicki"
-featured_image = "/img/nothanks2.jpg"
+featured_image = "/post/it-is-easy/images/nothanks2.jpg"
 publishdate = "2018-03-03"
 +++
 
@@ -10,7 +10,7 @@ publishdate = "2018-03-03"
 
 "Well, you get wet." <!--more-->
 
-![rain photo](/img/DSC_1503.NEF.jpg/)
+![rain photo](images/DSC_1503.NEF.jpg/)
 
 We red it somewhere before our trip. It's funny because it's so true. You can plan and get prepared for all kinds of different scenarios. You can buy expensive rain jackets, fenders for your bike, and rainproof shoes. But after riding in the pouring rain, you will get wet. 
 
@@ -22,4 +22,4 @@ If there is no bike path, ride carefully on the road! Or hire a van to get out o
 
 Traveling to a new place will always give you different challenges and open up things you are not familiar or even uncomfortable of! But this is the beauty, you will learn more about yourself and learn to not worry and let life take over a bit sometimes. Plus, there's always the internet to help out! 
 
-![Still No Thanks](/img/no_thanks.jpg/)
+![Still No Thanks](images/no_thanks.jpg/)
