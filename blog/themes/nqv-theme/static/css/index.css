@@ -116,7 +116,7 @@ body {
 }
 
 .main {
-  padding: 0 16px 0 16px;
+  padding: 0 16px 24px 16px;
   width: 100%;
 }
 
@@ -149,13 +149,13 @@ body {
   }
   .main {
     margin: auto;
-    padding: 0;
+    padding: 0 0 24px 0;
     width: 504px;
     font-size: 24px;
   }
   .main.main-single {
     width: 100%;
-    padding: 0 16px 0 16px;
+    padding: 0 16px 24px 16px;
   }
     .main .postSummary {
       margin: 0 0 16px 0;
@@ -171,7 +171,7 @@ body {
 @media(min-width: 636px) {
   .main.main-single {
     width: 604px;
-    padding: 0;
+    padding: 0 0 24px 0;
   }
 }
 @media(min-width: 1046px) {
