@@ -3,6 +3,8 @@ date = "2017-05-18T20:01:16-07:00"
 title = "The very first day on our bikes"
 author = "Vicki"
 featured_image = "/img/IMG_0069.jpg"
+publishdate = "2018-02-24"
+trip_date = "2017-05-18"
 +++
 
 After packing everything in our bike bags, eating with the Chinese tourists, and practicing riding our bikes in the hotel parking lot - we were ready!

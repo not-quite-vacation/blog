@@ -1,9 +1,11 @@
----
-date: "2017-06-03T18:56:40-08:00"
-title: "Wales"
-author: "Vicki"
-featured_image: "/img/DSC_1262.NEF.jpg"
----
++++
+date = "2017-06-03T18:56:40-08:00"
+title = "Wales"
+author = "Vicki"
+featured_image = "/img/DSC_1262.NEF.jpg"
+publishdate = "2018-03-06"
+trip_date = "2017-06-03"
++++
 
 People in Wales speak Welsh. After leaving Bristol and crossing River Severn, we were in Wales! <!--more-->
 

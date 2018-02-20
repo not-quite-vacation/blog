@@ -1,9 +1,11 @@
----
-date: "2017-02-02T18:56:40-08:00"
-title: "Not Quite Camping"
-author: "Vicki"
-featured_image: "/img/20170129_085202_HDR.jpg"
----
++++
+date = "2017-02-02T18:56:40-08:00"
+title = "Not Quite Camping"
+author = "Vicki"
+featured_image = "/img/20170129_085202_HDR.jpg"
+publishdate = "2018-02-20"
+trip_date = "2017-02-02"
++++
 
 After deciding to quit our job and go travel, the first thing that needed to be
 done is go camping…because I have never been camping.<!--more-->

@@ -5,6 +5,7 @@ date = "2017-04-22T12:27:37-07:00"
 title = "Millions of Flowers"
 author = "Vicki"
 featured_image = "/img/tulip2.JPG"
+draft = true
 +++
 
 Time is flying...minus the at work part. This post will be about the

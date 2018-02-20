@@ -1,8 +1,10 @@
 ---
 date: "2017-05-22T18:00:00-08:00" #test2018-01-31T18:00:00-08:00
+publishdate: "2018-02-27"
 title: "England"
 author: "Vicki"
 featured_image: "/post/england/images/600x600_DSC_0804.jpg"
+trip_date: "2017-05-22"
 ---
 
 England is GREEN and full of sheep and castles! <!--more--> 

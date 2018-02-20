@@ -1,9 +1,11 @@
----
-date: "2017-06-05T18:56:40-08:00"
-title: "Ireland - Rosslare to Kinsale"
-author: "Vicki"
-featured_image: "/post/ireland-1/images/600x600_DSC_1399.NEF.jpg"
----
++++
+date = "2017-06-05T18:56:40-08:00"
+title = "Ireland - Rosslare to Kinsale"
+author = "Vicki"
+featured_image = "/post/ireland-1/images/600x600_DSC_1399.NEF.jpg"
+publishdate = "2018-03-10"
+trip_date = "2017-06-05"
++++
 
 8 months on the road and Ireland is by far my favorite country! We love the beer, the people, and the stunning views of the Wild Atlantic Way. <!--more-->
 

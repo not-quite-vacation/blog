@@ -3,6 +3,8 @@ date = "2017-05-17T20:01:16-07:00"
 title = "How we left our stuff and took off from Seattle to England"
 author = "Vicki"
 featured_image = "/img/seeya.jpg"
+publishdate = "2018-02-20"
+trip_date = "2017-05-17"
 +++
 
 Once you made up your mind on traveling, the rest is easy. <!--more-->

@@ -1,9 +1,12 @@
----
-date: "2017-06-10T18:56:40-08:00" #test
-title: "Ireland - Old Tomb, Crookhaven and Mizen Head"
-author: "Vicki"
-featured_image: "/post/ireland-2/images/600x600_DSC_1456.NEF.jpg"
----
++++
+date = "2017-06-10T18:56:40-08:00" #test
+title = "Ireland - Old Tomb, Crookhaven and Mizen Head"
+author = "Vicki"
+featured_image = "/post/ireland-2/images/600x600_DSC_1456.NEF.jpg"
+publishdate = "2018-03-13"
+trip_date = "2017-06-10"
++++
+
 After one week of rain in Ireland, we continue our journey in the rain...<!--more-->
 ## Camping out in the storm
 
