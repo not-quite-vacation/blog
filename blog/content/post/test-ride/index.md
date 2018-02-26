@@ -5,6 +5,10 @@ publishDate = 2018-02-27
 trip_date = 2017-05-12
 author = "Andrew O'Neill"
 featured_image = "/post/test-ride/images/DSC_0445.jpg"
+categories = [ "Travel log", "Journal" ]
+tags = [ "Andrew", "Vicki", "Turner", "Seattle", "Camping" ]
+countries = [ "USA" ]
+series = [ "Pre Not Quite Vacation" ]
 +++
 
 Vicki and I want to test out our new bikes and gear so we call up
