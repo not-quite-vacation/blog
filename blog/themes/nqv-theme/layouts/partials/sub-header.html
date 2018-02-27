@@ -13,10 +13,14 @@
     <ul> {{ with .Site.GetPage "section" "post" }}
       <li>
         <a class="text" href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>{{ end}} {{ with .Site.GetPage "page" "about.md" }}
+      </li>{{ end }}
+      {{- range $taxonomyName, $taxonomy := .Site.Taxonomies }}
+      <li><a class="text" href="{{ "/" | relLangURL}}{{ $taxonomyName | urlize }}">{{ $taxonomyName | title }}</a></li>
+      {{- end }}
+      {{- with .Site.GetPage "page" "about.md" }}
       <li>
         <a class="text" href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>{{ end}}
+      </li>{{ end }}
       <li>
         <a class="icon" target="_blank" href="https://www.facebook.com/notquitevacation/">
           <img src="/img/40x40_facebook.png" />

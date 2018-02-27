@@ -1,0 +1,22 @@
+{{ partial "header.html" . }} {{ partial "sub-header.html" . }}
+<div id="logocountup">
+	<div id="logo">
+		<a href="{{ .Site.BaseURL }}"><img src="/img/logo.jpg"></a>
+	</div>
+</div>
+
+<main class="main main-list">
+    <h1>{{ .Data.Plural | title }}</h1>
+    <ul class="term-list">
+    {{- range $taxonomyTerm, $taxonomy := .Data.Terms }}
+        <li>
+            {{ $taxonomyTerm | upper }}
+            <ul class="term-list">
+            {{- range sort $taxonomy.Pages "PublishDate" "desc" }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a> {{ .Params.Author }}</li>
+            {{- end }}
+            </ul>
+        </li>
+    {{- end }}
+    </ul>
+</main> {{ partial "footer.html" . -}}

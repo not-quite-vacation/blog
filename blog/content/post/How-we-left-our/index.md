@@ -5,6 +5,7 @@ author = "Vicki"
 featured_image = "/post/how-we-left-our/images/seeya.jpg"
 publishDate = "2018-02-20"
 trip_date = "2017-05-17"
+categories = [ "how-to", "vicki talking to herself" ]
 +++
 
 Once you made up your mind on traveling, the rest is easy. <!--more-->

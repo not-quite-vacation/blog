@@ -4,6 +4,7 @@ title = "How I decided to quit my job and go travel"
 author = "Vicki"
 featured_image = "/post/how-i-decided/images/vicki-mitty.gif"
 publishDate = "2018-02-20"
+categories = [ "how-to", "vicki talking to herself" ]
 +++
 
 It's all because of the song space oddity and Walter Mitty jumping on

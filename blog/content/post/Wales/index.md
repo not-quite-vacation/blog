@@ -5,6 +5,10 @@ author = "Vicki"
 featured_image = "/post/wales/images/DSC_1262.NEF.jpg"
 publishdate = "2018-03-06"
 trip_date = "2017-06-03"
+categories = [ "Journal" ]
+countries = [ "UK", "Wales" ]
+tags = [ ]
+series = [ "United Kingdom" ]
 +++
 
 People in Wales speak Welsh. After leaving Bristol and crossing River Severn, we were in Wales! <!--more-->

@@ -5,6 +5,10 @@ author = "Vicki"
 featured_image = "/post/ireland-2/images/600x600_DSC_1456.NEF.jpg"
 publishdate = "2018-03-13"
 trip_date = "2017-06-10"
+categories = [ "journal" ]
+countries = [ "ireland" ]
+series = [ "Ireland" ]
+tags = [ "rain", "camping" ]
 +++
 
 After one week of rain in Ireland, we continue our journey in the rain...<!--more-->

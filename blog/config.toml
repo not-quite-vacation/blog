@@ -3,3 +3,9 @@ title = "Not Quite Vacation"
 baseURL = "https://www.notquitevacation.com/"
 theme = "nqv-theme"
 disqusShortname = "notquitevacation"
+
+[taxonomies]
+category = "categories"
+country = "countries"
+tag = "tags"
+series = "series"

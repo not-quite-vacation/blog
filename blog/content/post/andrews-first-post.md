@@ -5,6 +5,8 @@ author = "Andrew O'Neill"
 featured_image = "/img/andrew-psy.gif"
 trip_date = 2018-02-20
 publishdate = 2018-02-20T16:52:05+08:00
+tags = [ "Random" ]
+series = [ "Pre Not Quite Vacation" ]
 +++
 
 This is my first post. I will have a lot to say here. I plan to have

@@ -4,6 +4,7 @@ date = 2018-01-17T16:16:53+08:00
 author = "Vicki"
 featured_image = "/post/it-is-easy/images/nothanks2.jpg"
 publishdate = "2018-03-03"
+categories = [ "how-to", "vicki talking to herself" ]
 +++
 
 "What if it rains?"

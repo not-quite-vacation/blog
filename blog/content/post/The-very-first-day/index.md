@@ -5,6 +5,10 @@ author = "Vicki"
 featured_image = "/post/the-very-first-day/images/IMG_0069.jpg"
 publishdate = "2018-02-24"
 trip_date = "2017-05-18"
+categories = [ "journal", "first times" ]
+countries = [ "England", "UK" ]
+series = [ "United Kingdom" ]
+tags = [ ]
 +++
 
 After packing everything in our bike bags, eating with the Chinese

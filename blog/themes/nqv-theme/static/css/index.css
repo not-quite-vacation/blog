@@ -128,6 +128,11 @@ body {
   background-color: #eee;
 }
 
+.main-list > ul.term-list {
+  list-style-type: none;
+  padding: 0;
+}
+
 .aboutContainer {
   display: flex;
   flex-wrap: wrap;
@@ -223,6 +228,10 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+  .main-list > ul.term-list {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 @media(min-width: 1566px) {
   .main{
@@ -244,6 +253,10 @@ body {
     margin: 0;
   }
   .main-list h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .main-list > ul.term-list {
     grid-column-start: 1;
     grid-column-end: 4;
   }

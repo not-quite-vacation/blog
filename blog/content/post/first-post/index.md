@@ -5,6 +5,10 @@ author = "Vicki"
 featured_image = "/post/first-post/images/20170129_085202_HDR.jpg"
 publishdate = "2018-02-20"
 trip_date = "2017-02-02"
+categories = [ "journal", "first times" ]
+countries = [ "USA" ]
+series = [ "pre not quite vacation" ]
+tags = [ "camping" ]
 +++
 
 After deciding to quit our jobs and go travel, the first thing that
