@@ -124,6 +124,9 @@ body {
   width: 100%;
 }
 
+.main-post > table {
+  border-spacing: 0;
+}
 .main-post > table > tbody tr:nth-child(2n-1) {
   background-color: #eee;
 }
