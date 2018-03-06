@@ -79,6 +79,14 @@ body {
     line-height: 36px;
     font-weight: 700;
   }
+  .header > nav.open {
+    display: block;
+  }
+  .header > nav {
+    display: none;
+    clear: both;
+  }
+
   .header nav ul {
     width: 100%;
     list-style: none;

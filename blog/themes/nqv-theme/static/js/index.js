@@ -62,14 +62,9 @@ var deadline = '2017-05-17';
 initializeClock('clockdiv', deadline);
 
 var toggler = (selector) => {
-    var show = false;
     var nav = document.querySelector(selector);
-    nav.style.display = show ? "block" : "none";
     return () => {
-        show = !show;
-        var nav = document.querySelector(selector);
-        nav.style.display = show ? "block" : "none";
+        nav.classList.toggle("open");
     }
-    var a = documnet.querySelector(".header > nav");
 };
 var navToggle = toggler(".header > nav");
