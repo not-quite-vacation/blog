@@ -19,11 +19,11 @@ The Wild Atlantic Way stretches along the west coast of Ireland and it is truly 
 
 ![rain](images/600x600_DSC_1303.NEF.jpg)
 
-Okay we only rode partial of it, but it was amazing (Guinness amazing). We rode from Kinsale to Galway around 500Km in 2 weeks. And the first week felt like it never stopped raining…we were wet most of the time. Normally I would have hated it, but the beaches, dramatic cliffs, and the unique landscape is just too gorgeous. After riding in the wind and the rain, I really felt like I understood the Atlantic ocean (It's beauty and cruelty)… There are also many light houses on the way. My favorite one is the Fastnet Rock lighthouse which we saw from 5 miles away. It's the most southerly point of Ireland, located on a tiny island. It's cool to think that it was the last part of Ireland that the Irish Americans saw as they sailed to North America. 
+Okay we only rode part of the Wild Atlantic Way, but it was amazing (Guinness amazing). We rode from Kinsale to Galway around 500km in 2 weeks. The first week felt like it never stopped raining…we were wet most of the time. Normally I would have hated it, but the beaches, dramatic cliffs, and the unique landscape are just too gorgeous. After riding in the wind and the rain, I really felt like I understood the Atlantic ocean (It's beauty and cruelty)… There are also many lighthouses on the way. My favorite is the Fastnet Rock lighthouse which we saw from 5 miles away. It's the most southerly point of Ireland, located on a tiny island. It's cool to think that it was the last part of Ireland that the Irish Americans saw as they sailed to North America.
 
 ## How we started our trip in Ireland…
 
-We started our journey to Ireland on a ferry from Fishguard to Rosslare. The ferry ride was only 3 hours but OMG, it was the toughest sea sick I've ever experienced. I went from excited about the huge waves to dying from puking. The lady's room was like a puke sound symphony concert. I probably should have thought better when I ordered the tuna sandwich. 
+We started our journey to Ireland on a ferry from Fishguard to Rosslare. The ferry ride was only 3 hours but OMG, it was the harshest sea sickness I've ever experienced. I went from excited about the huge waves to dying from puking. The lady's room sounded like a symphony of puking. I probably should have thought harder before I ordered the tuna sandwich.
 
 Us just 10 mins on the ferry
 ![5 mins on the boat](images/600x600_IMG_0561.JPG)
@@ -31,31 +31,31 @@ Us just 10 mins on the ferry
 20 mins later
 ![me puked](images/600x600_IMG_0563.JPG)
 
-After the miserable ferry ride, we rode out with the Harleys (there were a ton of them on the ferry ready to ride the Wild Atlantic Way).
+After the miserable ferry ride, we rode out with the Harleys (there were a ton of them on the ferry, ready to ride the Wild Atlantic Way).
 
 ![Bikers](images/600x600_IMG_0564.JPG)
 
-## Waterford 
+## Waterford
 
-Waterford was the first city we rode by. We stayed at an Airbnb. The host was very nice but I was a bit grossed out by the bathroom and kitchen back then (that was before riding through Laos). Waterford is the oldest city of Ireland built by the Vikings a thousand years ago. We enjoyed walking around Reginald's Tower and missing the Waterford Crystal (heard it's a must see if you visit Waterford..). 
+Waterford was the first city we rode to. We stayed at an Airbnb. The host was very nice, but I was a bit grossed out by the bathroom and kitchen. (That was before riding through Laos). Waterford is the oldest city of Ireland built by the Vikings a thousand years ago. We enjoyed walking around Reginald's Tower and missing the Waterford Crystal. (Heard it's a must see if you visit Waterford.)
 
 ![vikings](images/600x600_IMG_0582.JPG)
 
-## Cork 
+## Cork
 
-We took a train from Waterford to Cork. Cork is one of my favorite cities in Ireland. It is said to be the rebel city. And I always wanted to be a rebel even though I'm just a normal nice kid. We went to a brewery tour at Franciscan Well Brewery. The Irish tour guy was super funny and they were generous on the sample size. We also witnessed some Americans ordering pizza and coke at the brewery… 
+We took a train from Waterford to Cork. Cork is one of my favorite cities in Ireland. It is said to be the rebel city. I always wanted to be a rebel, even though I'm just a normal nice kid. We went to a brewery tour at Franciscan Well Brewery. The Irish tour guide was super funny and they were generous on the sample size. We also witnessed some Americans ordering pizza and coke at the brewery…
 
 ![beer](images/600x600_IMG_0605.JPG)
 
-The famous Blarney Castle is also near Cork. It is famous for it's Blarney Stone. Legend says that if you hang upside-down to kiss the stone, you will get the gift of eloguence (elegant and good at communications?). We skipped it because there was a 2 hour wait to kiss the stone… and here's a beautiful view of the castle under construction.
+The famous Blarney Castle is also near Cork. It is famous for it's Blarney Stone. Legend says that if you hang upside-down to kiss the stone, you will get the gift of eloquence (elegant and good at communications?). We skipped it because there was a 2 hour wait to kiss the stone… and here's a beautiful view of the castle under construction.
 
 ![Blarney](images/600x600_DSC_1360.NEF.jpg)
 
-## Kinsale 
+## Kinsale
 
-Originally we planned to camp, but we were soaked and cold when we arrived to Kinsale. And decided to go baller and check in a very nice Inn. It was one of the best nights. We also had to run away from a restaurant because we didn't have enough cash to tip. Despite the rough day in the rain, I really enjoyed the fishing town and had the best hot shower I've ever had. 
+Originally we planned to camp, but we were soaked and cold when we arrived at Kinsale. We decided to go baller and check in a very nice Inn. It was one of the best nights. Since we were staying at such a nice place, it made sense to eat at a really nice restaurant as well. We had some wine and walked around the little allies of the town. Despite the rough day in the rain, I really enjoyed the fishing town and had the best hot shower I've ever had.
 
-After Kinsale, we kicked off our journey following the wild Atlantic way. There were signs everywhere, making the navigation super easy. We biked through James Fort and the old head. Both had breathtaking views. 
+After Kinsale, we kicked off our journey following the wild Atlantic way. There were signs everywhere, making the navigation super easy. We biked through James Fort and the old head. Both had breathtaking views.
 
 Old Head of Kinsale
 ![Old Head](images/600x600_DSC_1385.NEF.jpg)
@@ -72,9 +72,11 @@ Waterford Graffiti
 Blarney Castle House
 ![Castle House](images/600x600_IMG_0636.JPG)
 
-Riding along the beaches 
+Riding along the beaches
 ![beach ride](images/600x600_DSC_1399.NEF.jpg)
 
-Here's Andrew having fun at the Cork playground! 
+Here's Andrew having fun at the Cork playground!
 ![Andrew having fun](images/600x600_DSC_1334.NEF.jpg)
+
+
 
