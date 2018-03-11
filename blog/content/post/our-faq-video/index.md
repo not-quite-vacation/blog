@@ -7,7 +7,6 @@ categories = [ "video" ]
 series = ["faq" ]
 tags = [ "faq" ]
 featured_image = "/post/our-faq-video/images/IMG_7666.jpg"
-draft = true
 +++
 
 So we created a new video on our 
