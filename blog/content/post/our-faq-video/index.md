@@ -1,6 +1,7 @@
 +++
 title = "Our FAQ Video"
 date = 2018-03-11T10:00:43+09:00
+publishDate = 2018-03-11
 author = "Andrew and Vicki"
 categories = [ "video" ]
 series = ["faq" ]
