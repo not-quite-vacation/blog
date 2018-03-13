@@ -3,6 +3,7 @@ title = "Not Quite Vacation"
 baseURL = "https://www.notquitevacation.com/"
 theme = "nqv-theme"
 disqusShortname = "notquitevacation"
+googleAnalytics = "UA-115470687-1"
 
 [taxonomies]
 category = "categories"
