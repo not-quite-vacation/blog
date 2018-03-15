@@ -144,6 +144,12 @@ body {
   padding: 0;
 }
 
+.main blockquote {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 0 16px;
+}
+
 .aboutContainer {
   display: flex;
   flex-wrap: wrap;
