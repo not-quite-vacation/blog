@@ -9,7 +9,6 @@ categories = ["vicki talking to herself"]
 countries = ["Taiwan"]
 series = []
 tags = []
-draft = true
 +++
 I thought forever vacation was already a dream come true. Days on our bikes where we simply ride on and lose count of days.
 <!--more-->
