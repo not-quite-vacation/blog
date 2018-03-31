@@ -22,6 +22,7 @@ We stayed at a Hostel in a very small village. This was the view from
 a bridge that crossed into the neighboring village.
 
 <a href="image/fullsize/DSC_0679.jpg">![drunk gargoyle](images/DSC_0679.jpg)</a>
+</br>
 <a href="images/fullsize/DSC_0680.jpg">![eating gargoyle](images/DSC_0680.jpg)</a>
 
 Oxford was really beautiful. We went into many of the Universities in
@@ -42,6 +43,7 @@ sunset. This photo was taken while we were walking back from a pub. It
 also happened to be a lucky exposure number 777.
 
 <a href="images/fullsize/DSC_0801.jpg">![stone wall sensible](images/DSC_0801.jpg)</a>
+</br>
 <a href="images/fullsize/DSC_0802.jpg">![stone wall silly](images/DSC_0802.jpg)</a>
 
 We were riding down a small back road when we came across these stone
@@ -71,6 +73,7 @@ they realized we had food they went crazy. Their eyes are kind of alien
 looking. I'm not sure if these were a special breed or just normal sheep.
 
 <a href="images/fullsize/DSC_2414.jpg">![Vicki riding in a field 1](images/DSC_2414.jpg)</a>
+</br>
 <a href="images/fullsize/DSC_2415.jpg">![Vicki riding in a field 2](images/DSC_2415.jpg)</a>
 
 After leaving Scotland we rode south to York. We took a shortcut through

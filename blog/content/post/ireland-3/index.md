@@ -3,7 +3,7 @@ date = "2017-06-15T18:56:40-08:00" #test
 title = "Ireland - Killarney to Tralee"
 author = "Vicki"
 featured_image = "/post/ireland-3/images/DSC_1539-ANIMATION.gif"
-publishdate = "2018-03-28"
+publishdate = "2018-03-31"
 trip_date = "2017-06-15"
 categories = [ "journal" ]
 countries = [ "ireland" ]
@@ -28,7 +28,7 @@ And did a jump photo.
 
 ## Gap of Dunloe
 
-We didn't even know about Gap of Dunloe until we rode pass it to get to Killarney (an old Irish town with beautiful surroundings). The route from Kenmare to Killarney goes through Molls Gap, Blackvalley and Gap of Dunloe. All gorgeous places along the valleys and mountains. My favorite part is riding along the winding stream down the valleys. 
+We didn't even know about Gap of Dunloe until we rode past it to get to Killarney (an old Irish town with beautiful surroundings). The route from Kenmare to Killarney goes through Molls Gap, Blackvalley and Gap of Dunloe. All gorgeous places along the valleys and mountains. My favorite part is riding along the winding stream down the valleys. 
 
 ![Us at Gap of Dunloe](images/DSC_1620.jpg)
 
@@ -46,7 +46,7 @@ After the beautiful Killarney area, we took a shortcut on the train to Tralee. T
 Our dinner at Tralee. 
 ![yum](images/IMG_0808.jpg)
 
-After Tralee we headed north along the coast to Ballybunnion. Too bad we had to skip Dingle, but we saw it from far away. Some local told us how can you not visit Dingle if you visit the Wild Atlantic Way…
+After Tralee we headed north along the coast to Ballybunion. Too bad we had to skip Dingle, but we saw it from far away. Some local told us how can you not visit Dingle if you visit the Wild Atlantic Way…
 
 The BEACH! 
 ![beach](images/IMG_0825.jpg)
