@@ -9,7 +9,6 @@ categories = ["journal" ,"first times"]
 countries = ["new zealand"]
 series = ["new zealand"]
 tags = ["misery", "wildcamp"]
-draft = true
 +++
 
 New Zealand was not my idea. Now I think about it. Andrew was the one who really wants to go… <!--more-->
