@@ -14,8 +14,8 @@
       <li>
         <a class="text" href="{{ .Permalink }}">{{ .Title }}</a>
       </li>{{ end }}
-      {{- range $taxonomyName, $taxonomy := .Site.Taxonomies }}
-      <li><a class="text" href="{{ "/" | relLangURL}}{{ $taxonomyName | urlize }}">{{ $taxonomyName | title }}</a></li>
+      {{- range .Site.Params.navTaxonomies }}
+      <li><a class="text" href="{{ "/" | relLangURL}}{{ . | urlize }}">{{ . | title }}</a></li>
       {{- end }}
       {{- with .Site.GetPage "page" "about.md" }}
       <li>

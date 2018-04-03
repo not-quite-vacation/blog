@@ -10,3 +10,23 @@ category = "categories"
 country = "countries"
 tag = "tags"
 series = "series"
+
+[params]
+placesVisited = [ 
+    "United Kingdom",
+    "Ireland",
+    "France",
+    "Belgium",
+    "Netherlands",
+    "Germany",
+    "Czech Republic",
+    "Austria",
+    "Vietnam",
+    "Cambodia",
+    "Laos",
+    "Thailand",
+    "Taiwan",
+    "Japan",
+    "New Zealand",
+]
+navTaxonomies = ["categories", "countries"]
