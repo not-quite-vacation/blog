@@ -4,7 +4,7 @@ date = 2018-04-01T13:18:55+12:00
 author = "Vicki"
 publishDate = 2018-04-15
 trip_date = 2018-04-01
-featured_image = "/post/nz-where-you-get-tired-of-natural-beauty/images/DSC_8060.jpg"
+featured_image = "/post/nz-where-you-get-tired-of-natural-beauty/images/DSC_7898.jpg"
 categories = ["journal" ,"first times"]
 countries = ["new zealand"]
 series = ["new zealand"]
@@ -46,7 +46,7 @@ The only good thing is that we can say that we conquered Crown Range Summit (107
 Us cold on the Crown Range Summit...
 ![Us on the top](images/GOPR0204.JPG)
 
-### Chapter II: When you pay for a helicopter, you better get some. 
+### Chapter II: When you pay for a helicopter, you better get some beautiful scenery 
 
 After a few bad days in the rain and the base of Mountain Cook. We spent some money on a helicopter flight over the Tasman River to the official start of the A2O trail. I don't know if it's because we spent a lot of money or what but everything seems to go right now. 
 
@@ -92,6 +92,8 @@ Here's me having a beer at Scotts Brewery.
 
 I really enjoyed the past few days in New Zealand. Including the tiring episodes of pushing our bikes...
 
+![crossing river](images/DSC_7898.jpg)
+
 ![after pushing our bikes](images/GOPR0169.JPG)
 
 "It's okay to be scared sometimes, but don't you let it stop you from having fun!" 
@@ -100,3 +102,6 @@ I really enjoyed the past few days in New Zealand. Including the tiring episodes
 
 Our route in New Zealand. 
 ![map](images/NZsmall.png)
+
+Millions of stars as well. The photo below doesn't quite show it though.
+![stars](images/DSC_8060.jpg)
