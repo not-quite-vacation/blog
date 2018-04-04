@@ -7,7 +7,7 @@
 </div>
 <main class="main main-single">
 	<h1>{{ .Title }}</h1>
-	<h6>{{ .PublishDate.Format "Mon, Jan 2, 2006" }}</h6>
+	<h6>By {{ .Params.author }} - {{ .PublishDate.Format "Jan 2, 2006" }}</h6>
 	{{ .Content }}
 	{{ with .Params.trip_date }}<h6>Day on our trip {{ dateFormat "Jan 02, 2006" . }}</h6>{{ end }}
 	<h2>Share this on </h2>
