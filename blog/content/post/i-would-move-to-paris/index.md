@@ -79,7 +79,7 @@ I never heard of this place before going to Paris. Maybe it's the surprising fac
 
 ### Voilà 
 
-Everyone will have a different experience of Paris! I say we should just all get lost in Paris for a few days, pick a café with seats facing the pedestrians, do some people watching, walk along River Seine, have some wine and bread, read a poem in the sun, pretend to know art, buy a  fresh baguette and enjoy the charm of Paris. 
+Everyone will have a different experience of Paris! I say we should just all get lost in Paris for a few days - pick a café with seats facing the pedestrians, do some people watching, walk along River Seine, have some wine and bread, read a poem in the sun, pretend to know art, buy a fresh baguette, smell the roses. Ahhhhh, Paris does make you a hopeless romantic.
 
 ![locks](images/DSC_2552.jpg)
 
