@@ -9,7 +9,6 @@ categories = ["journal"]
 countries = ["france"]
 series = ["france"]
 tags = ["Paris","love"]
-draft = true
 +++
 
 It was love at first sight. I would put on a dress for Paris. <!--more-->
@@ -94,8 +93,8 @@ Yummy snails.
 French doors at our Airbnb apartment.
 ![french doors](images/IMG_1938.jpg)
 
-Andrew and Sainte Chapelle.
-![Sainte Chapelle ](images/Andrew_Paris.gif)
+Andrew and Notre Dame.
+![Notre Dame](images/Andrew_Paris.gif)
 
 ![arc](images/DSC_2671.jpg)
 
