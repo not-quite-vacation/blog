@@ -4,7 +4,6 @@ date = 2018-04-23T21:25:17+12:00
 author = "Andrew O'Neill"
 publishDate = 2018-04-27
 trip_date = 2017-06-27
-featured_image = ""
 categories = ["journal"]
 countries = ["scotland", "uk"]
 series = ["uk", "a lap around scotland with my mom"]
