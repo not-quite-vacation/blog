@@ -82,13 +82,13 @@ upcoming challenge of biking around Scotland.
 ![Dinner](images/IMG_1181.jpg)
 
 We went to a restaurant started by Jamie Oliver or some famous TV
-chef. The food, wine, and company made it an excellent night. After
-dinner we walked back to the apartment. Vicki and I were exhausted from
-our long day of biking and travelling. Wende and Dan were not tired at
-all. The jet lag and excitement from being somewhere new must have given
-them some energy because they decided to go out and hit the town. From
-what I remember they said they went to a small casino and had a few
-whiskys. I'm not sure what time they got back because we were fast asleep.
+chef. The food, wine, and company made it an excellent night. After dinner
+we walked back to the apartment. Vicki and I were exhausted from our long
+day of biking and travelling. Wende and Dan were not tired at all. The
+jet lag and excitement from being somewhere new must have given them
+some energy because they decided to go out and hit the town. From what I
+remember they said they went to a small casino and had a few whiskies. I'm
+not sure what time they got back because we were fast asleep.
 
 ## First Day on the Road
 
