@@ -29,7 +29,7 @@ tubes. Then we headed northwest toward the first destination, Balloch.
 ![Ducks in a boat](images/IMG_1232.jpg)
 
 We hadn't really planned much. Wende had made a reservation at Pitlochry
-so we chose a route that would get us there. After cycling through England
+so we chose a route that would get us there. After cycling through England,
 Vicki and I were pretty familiar with the national cycle routes. We
 chose to follow route 7 from Glasgow all the way to Inverness. The
 first day was pretty easy. A walk in the park for Vicki, Wende, and I.
