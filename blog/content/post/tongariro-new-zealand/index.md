@@ -5,13 +5,13 @@ author = "Vicki"
 publishDate = 2018-05-08
 trip_date = 2018-04-19
 featured_image = "/post/tongariro-new-zealand/images/GOPR0487.JPG"
-categories = []
-countries = []
-series = []
-tags = []
+categories = ["journal", "first-times"]
+countries = ["new zealand"]
+series = ["new zealand"]
+tags = ["north island", "misery","rain","magical","dolphins"]
 draft = true
 +++
-Try not to get blown off the mountain. ✔ </br>
+Try not to get blown off the mountain and into a crater. ✔ </br>
 Swim with dolphins. ✔ 
 <!--more-->
 
@@ -32,17 +32,23 @@ The start of our hike was alright, couldn't see much but the wind was calm and n
 
 ![foggy mountains](images/GOPR0487.JPG)
 
-Once we started the real climb up the mountains, it started to rain. We were like okay, we knew it was going to rain, so what! Then it got steeper and very cold. (Andrew and I were wearing jeans like a Champ.) The final climb up the summit, was wind blowing at its full blast. 
+Once we started the real climb up the mountains, it started to rain. We were like okay, we knew it was going to rain, so what. Then it got steeper and colder. (Andrew and I were wearing jeans like a Champ.) Then a series of exciting events started to happen.
+
+The wind was blowing at its full blast. 
 
 Both sides were cliffs. 
 
-The wind was trying to kill us. (by blowing us into the crater)
+The wind was trying to kill us. (By blowing us into the crater.)
 
-A girl broke down crying.
+A girl broke down crying. (She had someone with her, so we ignored her and continued.)
 
-Andrew was wearing my extra socks over his frozen gloves. 
+Andrew was wearing my extra socks over his frozen gloves. ( I totally saved his life.)
 
-We were hovering down and sort of crawling so the wind won't blow us away.
+People were sheltering next to huge rocks and holding on to it. 
+
+Sarah gave me an encouraging shout out : Lean low and use the poles! We can do this! (something like that.) 
+
+We were hovering down and sort of crawling so the wind won't blow us away. 
 
 ### So here we are, at the summit. 
 ![mysterious Tongariro](images/summit2.jpg)
@@ -50,9 +56,23 @@ We were hovering down and sort of crawling so the wind won't blow us away.
 
 Yeah, that's pretty much what Tongariro Crossing looks like on a foggy mysterious day.
 
-The spirts must have heard us. As we slide down the mountain, the fog finally started to clear away and we were able to see the thermal pools. 
+![here's me being happy](images/GOPR0494.JPG)
+
+The way down the mountain was pretty steep. And the soft volcanic soil made it nice and slippery. I felt like I was skiing down a mountain. As we slide down the slope, the fog finally started to clear away and we were able to see the thermal pools. (YAY! The spirts must have heard us.)
+
+![thermal pools](images/GOPR0502.JPG)
+
+The rest of the journey on the other side of the mountain was ironically sunny and clear, I kept looking back and hoping maybe it will still clear out. But behind us was just gloomy and doomed.  
+
+![thermal pools2](images/G1.jpg)
+
+![clear sky](images/GOPR0560.JPG)
 
 To sum it up, the three of us decided to do a reunion for the hike on a day with clear blue sky and heating sun! 
+
+![reunion soon](images/GOPR0524.JPG)
+
+![me and Sarah](images/GPTempDownload.jpg)
 
 ## Hot Water Beach 
 
@@ -60,10 +80,8 @@ Hot Water Beach is on the must do lists when visiting Coromandel (North Island).
 
 But yes I said DOLPHINS. When we arrived at the hot water beach, the first thing we saw were dolphins swimming. Not just one dolphin but like 6 or 7! People were so close to them, it looked like they could touch them if they wanted. I immediately ran/swim toward the dolphins. 
 
-It was insane. Seeing these beautiful creatures swimming close by. Spellbinding. Then I got a bit scared, since I realized I don't know anything about dolphins. Will they charge at me by accident or thought I was a fish and bite me? Or maybe they are sharks… plus they seem to be like mermaids seducing us further and further away from shore. I am not very good at swimming in big waves. So I swam back and are finally ready to dug my cool puddle.
+![dolphins](images/shark.jpg)
 
-It was the best beach I ever visited. 
+It was surreal. Seeing these beautiful creatures swimming close by. Spellbinding. Then I got a bit scared, since I realized I don't know anything about dolphins. Will they charge at me by accident or thought I was a fish and bite me? Or maybe they are sharks… plus they seem to be like mermaids seducing us further and further away from shore. I am not very good at swimming in big waves. So I swam back and are finally ready to dug my cool puddle.
 
-
-Here's me being optimistic. 
-![me at the summit](images/GOPR0494.JPG)
+It was the best hot water beach I ever visited. 
