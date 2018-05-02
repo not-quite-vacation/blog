@@ -15,12 +15,12 @@ Try not to get blown off the mountain and into a crater. ✔ </br>
 Swim with dolphins. ✔ 
 <!--more-->
 
-Never thought I get to check those off. 
+Never thought I’d get to check those off. 
 ## New Zealand's best single day hike
 
 One of our big plans for New Zealand is hiking the Tongariro Alpine Crossing - a 20km hike between Mt Tongariro and Mt Ngauruhoe (Mount Doom). It is famous for its unique volcanic landscapes and cultural importance (peaks and rivers for local Maori). 
 
-Andrew was really hyped up about this hike, since he did some research and the hike is probably one of those must hike before you die kind of trails. (I'll change it to must hike maybe when sunny and clear so you can see the mountain… and not die kind of trails…) Anyway, he was pretty determined to do it even with the rainy forecast. In addition, the people at the lodge highly recommended it and said that the rain and fog will add a mysterious/magical vive to the journey. And that we should totally do it. 
+Andrew was really hyped up about this hike, since he did some research and the hike is probably one of those must hike before you die kind of trails. (I'll change it to must hike maybe when sunny and clear so you can see the mountain… and not die kind of trails…) Anyway, he was pretty determined to do it even with the rainy forecast. In addition, the people at the lodge highly recommended it and said that the rain and fog will add a mysterious/magical vibe to the journey. And that we should totally do it. 
 
 ![foggy](images/GOPR0471.JPG)
 
@@ -58,7 +58,7 @@ Yeah, that's pretty much what Tongariro Crossing looks like on a foggy mysteriou
 
 ![here's me being happy](images/GOPR0494.JPG)
 
-The way down the mountain was pretty steep. And the soft volcanic soil made it nice and slippery. I felt like I was skiing down a mountain. As we slide down the slope, the fog finally started to clear away and we were able to see the thermal pools. (YAY! The spirts must have heard us.)
+The way down the mountain was pretty steep. And the soft volcanic soil made it nice and slippery. I felt like I was skiing down a mountain. As we slide down the slope, the fog finally started to clear away and we were able to see the thermal pools. (YAY! The spirits must have heard us.)
 
 ![thermal pools](images/GOPR0502.JPG)
 
@@ -68,7 +68,7 @@ The rest of the journey on the other side of the mountain was ironically sunny a
 
 ![clear sky](images/GOPR0560.JPG)
 
-To sum it up, the three of us decided to do a reunion for the hike on a day with clear blue sky and heating sun! 
+To sum it up, the three of us decided to do a reunion for the hike on a day with clear blue sky and hot sun!
 
 ![reunion soon](images/GOPR0524.JPG)
 
@@ -82,6 +82,8 @@ But yes I said DOLPHINS. When we arrived at the hot water beach, the first thing
 
 ![dolphins](images/shark.jpg)
 
-It was surreal. Seeing these beautiful creatures swimming close by. Spellbinding. Then I got a bit scared, since I realized I don't know anything about dolphins. Will they charge at me by accident or thought I was a fish and bite me? Or maybe they are sharks… plus they seem to be like mermaids seducing us further and further away from shore. I am not very good at swimming in big waves. So I swam back and are finally ready to dug my cool puddle.
+It was surreal. Seeing these beautiful creatures swimming close by. Spellbinding. Then I got a bit scared, since I realized I don't know anything about dolphins. Will they charge at me by accident or think I am a fish and bite me? Or maybe they are sharks… plus they seem to be like mermaids seducing us further and further away from shore. I am not very good at swimming in big waves. So I swam back and was finally ready to dig my cool puddle.
 
-It was the best hot water beach I ever visited. 
+It was the best hot water beach I have ever visited. 
+
+
