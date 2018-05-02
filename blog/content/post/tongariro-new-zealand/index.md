@@ -2,14 +2,13 @@
 title = "Things you can check off your bucket list with New Zealand"
 date = 2018-04-24T14:22:46+12:00
 author = "Vicki"
-publishDate = 2018-05-08
+publishDate = 2018-05-05
 trip_date = 2018-04-19
 featured_image = "/post/tongariro-new-zealand/images/GOPR0487.JPG"
 categories = ["journal", "first-times"]
 countries = ["new zealand"]
 series = ["new zealand"]
 tags = ["north island", "misery","rain","magical","dolphins"]
-draft = true
 +++
 Try not to get blown off the mountain and into a crater. ✔ </br>
 Swim with dolphins. ✔ 
