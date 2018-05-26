@@ -2,13 +2,12 @@
 title = "Killin it in Scotland"
 date = 2018-05-04T09:06:46+01:00
 author = "Andrew O'Neill"
-publishDate = 2018-05-08
+publishDate = 2018-05-26
 featured_image = "/post/killin-it/images/DSC_2059.jpg"
 categories = ["journal"]
 countries = ["scotland", "uk"]
 series = ["a lap around scotland with my mom"]
 tags = ["waterfall", "bar", "camping"]
-draft = true
 +++
 
 On this stage we ride up a mountain to a waterfall then around some
