@@ -132,6 +132,10 @@ body {
   width: 100%;
 }
 
+.main video {
+  width: 100%;
+}
+
 .main-post > table {
   border-spacing: 0;
 }

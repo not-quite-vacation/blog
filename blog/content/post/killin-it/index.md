@@ -17,10 +17,10 @@ lakes. We relax with some live music. <!--more-->
 
 ## A Tough Climb out of Aberfoyle
 
-<video src="images/test.webm" loop autoplay muted>
+<video playsinline autoplay muted loop>
 <source src="images/test.webm" type="video/webm">
 <source src="images/test.mp4" type="video/mp4">
-Sorry, you can not play videos. Try chrome or firefox.
+<p>Sorry, you can not play videos. Try chrome or firefox.</p>
 </video>
 
 After a good night's sleep in Aberfoyle, we had a nice breakfast at the
