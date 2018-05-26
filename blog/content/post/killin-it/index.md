@@ -1,5 +1,5 @@
 +++
-title = "Killin it"
+title = "Killin it in Scotland"
 date = 2018-05-04T09:06:46+01:00
 author = "Andrew O'Neill"
 publishDate = 2018-05-08
@@ -7,7 +7,7 @@ featured_image = "/post/killin-it/images/DSC_2059.jpg"
 categories = ["journal"]
 countries = ["scotland", "uk"]
 series = ["a lap around scotland with my mom"]
-tags = []
+tags = ["waterfall", "bar", "camping"]
 draft = true
 +++
 
@@ -24,9 +24,9 @@ lakes. We relax with some live music. <!--more-->
 Sorry, you can not play videos. Try chrome or firefox.
 </video>
 
-After a good nights sleep in Aberfoyle, we had a nice breakfast at the
-B&B then headed off for our next destination, Strathyre. The first part of
-the day was really tough. There were was a long, steep hill right off the
+After a good night's sleep in Aberfoyle, we had a nice breakfast at the
+B&B then headed off for our next destination, Strathyre. The first part
+of the day was really tough. There was a long, steep hill right off the
 bat. The path then switched from paved to dirt. The trail weaved through
 the forest avoiding the highway. There were many pretty waterfalls and
 lakes along the way. We stopped and took lots of pictures. The hills

@@ -184,18 +184,22 @@ many glasses Dan would carry around Scotland and then home to Buffalo.
 
 # Killin it
 
-![Aberfoyle waterfall](images/DSC_2059.jpg)
-
 On this stage we ride up a mountain to a waterfall then around some
-lakes. We relax with some live music.
+lakes. We relax with some live music. <!--more-->
+
+![Aberfoyle waterfall](images/DSC_2059.jpg)
 
 ## A Tough Climb out of Aberfoyle
 
-![Riding by](images/DSC_2068-ANIMATION.gif)
+<video src="images/test.webm" loop autoplay muted>
+<source src="images/test.webm" type="video/webm">
+<source src="images/test.mp4" type="video/mp4">
+Sorry, you can not play videos. Try chrome or firefox.
+</video>
 
-After a good nights sleep in Aberfoyle, we had a nice breakfast at the
-B&B then headed off for our next destination, Strathyre. The first part of
-the day was really tough. There were was a long, steep hill right off the
+After a good night's sleep in Aberfoyle, we had a nice breakfast at the
+B&B then headed off for our next destination, Strathyre. The first part
+of the day was really tough. There was a long, steep hill right off the
 bat. The path then switched from paved to dirt. The trail weaved through
 the forest avoiding the highway. There were many pretty waterfalls and
 lakes along the way. We stopped and took lots of pictures. The hills
