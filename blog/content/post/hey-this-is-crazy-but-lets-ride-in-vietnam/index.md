@@ -9,7 +9,6 @@ categories = ["journal", "first times", ]
 countries = ["Vietnam"]
 series = ["South East Asia"]
 tags = ["canals", "floating market", "food"]
-draft = true
 +++
 
 I was very nervous when we decided to bike in South East Asia. It just seems a little too crazy… <!--more-->
