@@ -2,7 +2,7 @@
 title = "Hey this is crazy, but let's go ride in Vietnam"
 date = 2018-05-27T12:18:49+02:00
 author = "Vicki"
-publishDate = 2018-06-10
+publishDate = 2018-06-03
 trip_date = 2017-10-31
 featured_image = "/post/hey-this-is-crazy-but-lets-ride-in-vietnam/images/IMG_4519.jpg"
 categories = ["journal", "first times", ]
@@ -14,7 +14,7 @@ draft = true
 
 I was very nervous when we decided to bike in South East Asia. It just seems a little too crazy… <!--more-->
 
-### It ended up being one of the best decisions I have ever made.
+It ended up being one of the best decisions I have ever made!
 
 
 ## I Dream of Rice Noodle Soup
