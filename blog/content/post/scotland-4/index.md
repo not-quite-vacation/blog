@@ -2,16 +2,15 @@
 title = "Scotland Part 4: Riding to Pitlochry"
 date = 2018-05-27T11:49:55+02:00
 author = "Andrew O'Neill"
-publishDate = 2018-06-10
+publishDate = 2018-06-20
 featured_image = "/post/scotland-4/images/DSC_2208.jpg"
 categories = ["journal"]
 countries = ["scotland", "uk"]
 series = ["a lap around scotland with my mom"]
 tags = ["whisky", "castle", "lake"]
-draft = true
 +++
 
-The one were Andrew get's a flat, the gang meets a vampire, we visit a
+The one where Andrew get's a flat, the gang meets a vampire, we visit a
 castle, and drink some premium whisky. <!--more-->
 
 ![highland cow and flower](images/DSC_2208.jpg)
@@ -80,7 +79,7 @@ in the Hercules Garden. The garden is really beautiful. There was a swan
 family in the lake and many interesting statues. After we had walked
 the gardens we hit the road.
 
-![swans](images/2196.jpg)
+![swans](images/DSC_2196.jpg)
 
 ![fonzie baby](images/IMG_1382.jpg)
 
