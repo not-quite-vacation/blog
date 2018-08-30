@@ -55,7 +55,7 @@ The last few days to Luang prabang were hard climbs but very rewarding for our s
 ## Embrace special moments in life
 Being back home now, I find myself coming back to these precious memories. It reminded me of the adventures, and simplicity of life. Maybe I have learned a little secret. If one day I feel lost in the daily hustle and bustle, then I can always go on an adventure and appreciate life’s special moments - take in what the world has for us. 
 
-![I saw a pig](images/IMG_5277.png)
+![I saw a pig](images/IMG_5275.jpg)
 
 ## Some photos in Laos.
 
@@ -66,7 +66,3 @@ One of the guesthouse that was not that bad.
 
 Andrew enjoying some local food.
 ![hot pot in Laos](images/IMG_5029.JPG)
-
-
-
-
