@@ -30,5 +30,6 @@ placesVisited = [
     "New Zealand",
     "Portugal",
     "Spain",
+    "Italy",
 ]
 navTaxonomies = ["categories", "countries"]
