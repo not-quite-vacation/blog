@@ -37,7 +37,7 @@ Us being cute!
 Us at the super bowl in Taiwan. Shots with my Dad at 7am in the morning! 
 ![super bowl](images/IMG_7148.jpg)
 
-Life is funny. When we were young, our parents were our home, our shelter. They seem to know everything. But when we get a bit older, we think we know better than our parents and are all grown up. Time flys, we then realized being a kid is one of the happiest moments of our lives. Either way, I think we will always be kids to our parents.
+Life is funny. When we were young, our parents were our home, our shelter. They seem to know everything. But when we get a bit older, we think we know better than our parents and are all grown up. Time flies, we then realized being a kid is one of the happiest moments of our lives. Either way, I think we will always be kids to our parents.
 
 Yep. I am so spoiled and my Mom did complain about how short the last two months were. Maybe I'll move back with them.  
 
