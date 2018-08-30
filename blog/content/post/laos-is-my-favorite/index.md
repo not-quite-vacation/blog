@@ -9,7 +9,6 @@ categories = [ "vicki talking to herself", "journal" ]
 countries = [ "laos" ]
 series = [ "Laos" ]
 tags = [ "mountains","biking","favorite" ]
-draft = true
 +++
 
 One of the questions I get asked a lot regarding our trip is "What's your favorite country?"<!--more-->
