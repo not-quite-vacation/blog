@@ -23,7 +23,7 @@
 
 <main class="main main-list">
   <h1>Recent Posts</h1>
-  {{- range sort .Data.Pages "PublishDate" "desc" | first 12 -}} {{- if eq .Type "post" }}
+  {{- range first 12 (where .Data.Pages "Type" "post").ByPublishDate.Reverse -}}
   <article class="postSummary">
     <header>
       <h2 class="postSummaryHeader title">
@@ -40,5 +40,5 @@
       <a href="{{ .Permalink }}">>> Read More</a>
     </footer>
   </article>
-  {{- end -}} {{- end }}
+  {{- end }}
 </main>{{ partial "footer.html" . }}
