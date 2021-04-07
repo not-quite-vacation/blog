@@ -23,7 +23,7 @@
 
 <main class="main main-list">
   <h1>Recent Posts</h1>
-  {{- range first 12 (where .Data.Pages "Type" "post").ByPublishDate.Reverse -}}
+  {{- range first 12 (where .Site.RegularPages "Type" "post").ByPublishDate.Reverse -}}
   <article class="postSummary">
     <header>
       <h2 class="postSummaryHeader title">
